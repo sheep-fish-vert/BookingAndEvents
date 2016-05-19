@@ -1,0 +1,44 @@
+.listener{    
+    .convertation{ padding: 0 15px;
+        .artist-conteiner{ overflow: hidden; width: 100%; ; position: relative; padding: 0;
+            li{float: left; min-width: 256px; min-height: 256px;
+                img{ width: 100%; height: 100%;}
+            }
+        }
+        
+        .artist-list{ overflow: hidden; width: 100%; ; position: relative; padding: 0;
+            li{ display: block; margin-bottom: 40px; max-width: 560px; float: left; min-width: 256px; min-height: 256px;
+                .item{ position: relative;
+                    .conteiner-s{overflow: hidden; position: relative; 
+                        .image-block{width: 100%;
+                            img{width: 100%; height: auto;}
+                        }
+                        .hovered-block{position: absolute;  bottom: -95px; left: 0; height: 320px; right: 0; width: 100%; text-align: justify; padding: 0 30px 30px ;transition: all 0.5s;
+                            .name-band{ padding-top: 170px; font-size: 18px; font-family: "Helvetica", sans-serif; color: rgb(255, 255, 255); font-weight: bold; line-height: 1.2; }
+                            .subtext{ font-size: 14px; font-family: "Helvetica", sans-serif; color: rgb(67, 67, 67); display: block; height: 70px; opacity: 0; transition: all 0.5s;}
+                            .shaped { width:100%; height: 100%; float: right; shape-outside: polygon(0 0, 100% 0%, 100% 100%, 100% 100%); shape-margin: 20px;}
+
+                        }
+                        &:before{content: ''; position: absolute; bottom: -100%;  right: 100%; width: 0; height: 0; border-style: solid; border-width: 400px 0 0 560px; border-color: transparent transparent transparent rgba(238, 174, 49, 0.9); opacity: 0; transition: all 0.5s;}
+                    }
+                }
+                &:hover{
+                    .conteiner-s:before{ bottom: 0; right: 0; opacity: 1;}
+                    .conteiner-s{
+                        .hovered-block{ bottom: 0px;
+                            .name-band{ }
+                            .subtext{opacity: 1;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .upper-text{column-count: 3; column-gap: 60px; padding: 55px 0; font-family: 'Helvetica', sans-serif; font-weight: 400; font-size: 14px; line-height: 1.2; color: rgb(110, 110, 110);}
+}
+
+
+/* plugin */ 
+
+
+/* plugin */

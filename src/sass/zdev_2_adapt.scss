@@ -11,13 +11,13 @@
 
 }
 @media screen and (max-width: 1024px){
-
+    .listener .upper-text{column-count: 2; column-gap: 20px;}
 }
 @media screen and (max-width: 992px){
 
 }
 @media screen and (max-width: 767px){
-
+    .listener .upper-text{column-count: 1; column-gap: 0px; padding: 25px 0;}
 }
 @media screen and (max-width: 666px){
 
