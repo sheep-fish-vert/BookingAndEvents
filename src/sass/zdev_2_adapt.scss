@@ -5,15 +5,36 @@
 
 }
 @media screen and (max-width: 1366px){
+    .listener{ 
+        .adolist-1360{display: block;
+            .artist-list{width: 40%; float: left; margin: 0 5%;}
+        }
+        .adolist-1920{display: none;}
+    }
 
 }
 @media screen and (max-width: 1280px){
 
 }
 @media screen and (max-width: 1024px){
-    .listener .upper-text{column-count: 2; column-gap: 20px;}
+
+    .listener{ 
+        .upper-text{column-count: 2; column-gap: 20px;}
+        .adolist-1360{display: block;
+            .artist-list{width: 46%; float: left; margin: 0 2%;}
+        }
+        .convertation .artist-list li .item .conteiner-s .hovered-block .shaped { width: 120%;   height: 100%;}
+    }
 }
 @media screen and (max-width: 992px){
+    .listener{ 
+        .adolist-1360{display: block;            
+            .convertation .artist-list{width: calc(100% - 30px); float: none; margin: 0 15px;
+                li{ margin: 0 auto 40px; float: none;  min-width: 200px; min-height: 0; width: 100%; height: auto;
+                }
+            }
+        }
+    }
 
 }
 @media screen and (max-width: 767px){
@@ -23,7 +44,22 @@
 
 }
 @media screen and (max-width: 479px){
-
+    .listener{ 
+        .adolist-1360{display: block;            
+            .convertation .artist-list{width: 100%; float: none; margin: 0;
+                li{ margin: 0 auto 40px; float: none;  min-width: 200px; min-height: 0; width: 100%; height: auto;
+                    .conteiner-s:before{ bottom: 0; right: 0; opacity: 1;}
+                        .conteiner-s{
+                            .hovered-block{ bottom: 0px; top: calc(100% - 230px); height: 230px; overflow: hidden; padding: 0 0px 10px 10px;
+                                .name-band{ padding-top: 90px; font-size: 16px;}
+                                .subtext{opacity: 1; font-size: 12px; margin: 0;}
+                                .shaped { width: 100%; height: 100%;}
+                            }
+                        }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 320px){
 

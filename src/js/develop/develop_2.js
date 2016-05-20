@@ -27,14 +27,14 @@ $(document).ready(function(){
     wall.fitWidth();
       
   }
-  
+ /* 
   if( $('.main').find('#artist-list').length == 1 ){
       console.log('tyt');
       var wall = new Freewall("#artist-list");
       wall.reset({
         selector: '.box',
         animate: true,
-        cellW: 560,
+        cellW: 280,
         cellH: 100,
         fixSize: 0,
         gutterX: 20,
@@ -50,6 +50,7 @@ $(document).ready(function(){
     wall.fitWidth();
       
   }
+  */
   
 });
 
