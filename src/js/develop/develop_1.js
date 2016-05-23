@@ -7,9 +7,9 @@
 
             function indexPageSizeMain(){
 
-                if($(window).width() > 992){
+                var windowHeight = $(window).height();
 
-                    var windowHeight = $(window).height();
+                if($(window).width() > 992 && windowHeight > 500){
 
                     var footerHeight = $('.footer').outerHeight();
 
@@ -17,9 +17,13 @@
 
                     $('.index-page').height(indexPageHeight);
 
+                    $('.part').removeAttr('style');
+
                 }else{
 
                     $('.index-page').removeAttr('style');
+
+                    $('.part').height(windowHeight/2)
 
                 }
 
@@ -29,20 +33,25 @@
 
         /* index page circle text position */
 
+            var timerTextPos = null;
+
             function indexCiclePageTextPos(){
 
-                $('.part-circle').each(function(){
+                clearTimeout(timerTextPos);
 
-                    var circleHeight = $(this).height();
-                    var textItem = $(this).find('.part-circle-text');
-                    var textHeight = textItem.height();
-                    var titleTop = $(this).find('p span').position().top;
+                timerTextPos = setTimeout(function(){
 
-                    var position = (circleHeight/2)-(textHeight/2)-titleTop;
+                    $('.part-circle').each(function(){
 
-                    textItem.css('top', position);
+                        var textItem = $(this).find('.part-circle-text');
+                        var titleTop = $(this).find('p span').position().top;
+                        console.log($(this).height());
+                        var valueTop = 50 - ((titleTop*100)/$(this).height());
+                        textItem.css({'top':valueTop+'%'});
 
-                });
+                    });
+
+                }, 300);
 
             }
 
@@ -71,19 +80,37 @@
 
 /* index-page background-position */
 
-    function indexPageBackgroundSize(){
+    function indexPageBackgroundPosition(){
 
-        $('.part-background').each(function(){
+        var timerBackground = null;
 
-            var imgParams = [(-1)*($(this).find('img').height()/2), (-1)*($(this).find('img').width()/2)];
-            console.log(imgParams);
+        function indexPageBackgroundPositionMain(){
 
-            $(this).find('img').css({'margin':imgParams[0]+'px 0 0 '+imgParams[1]+'px'});
+            clearTimeout(timerBackground);
+
+            tiemrBackground = setTimeout(function(){
+
+                $('.part-background').each(function(){
+
+                    var imgParams = [(-1)*($(this).find('img').height()/2), (-1)*($(this).find('img').width()/2)];
+
+                    $(this).find('img').css({'margin':imgParams[0]+'px 0 0 '+imgParams[1]+'px'});
+
+                });
+
+            },300);
+
+        }
+
+        indexPageBackgroundPositionMain();
+
+        $(window).resize(function(){
+
+            indexPageBackgroundPositionMain();
 
         });
 
     };
-
 
 /* /index-page background-position */
 
@@ -113,7 +140,7 @@ $(document).ready(function(){
 
     indexPageSize();
     indexPageHover();
-    indexPageBackgroundSize();
+    indexPageBackgroundPosition();
 
 });
 
