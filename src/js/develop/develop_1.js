@@ -38,7 +38,6 @@
                     var textHeight = textItem.height();
                     var titleTop = $(this).find('p span').position().top;
 
-                    console.log(circleHeight, textHeight, titleTop);
                     var position = (circleHeight/2)-(textHeight/2)-titleTop;
 
                     textItem.css('top', position);
@@ -70,14 +69,63 @@
 
 /* /index-page size */
 
+/* index-page background-position */
+
+    function indexPageBackgroundSize(){
+
+        $('.part-background').each(function(){
+
+            var imgParams = [(-1)*($(this).find('img').height()/2), (-1)*($(this).find('img').width()/2)];
+            console.log(imgParams);
+
+            $(this).find('img').css({'margin':imgParams[0]+'px 0 0 '+imgParams[1]+'px'});
+
+        });
+
+    };
+
+
+/* /index-page background-position */
+
+/* index page hover */
+
+    function indexPageHover(){
+        $('.part-circle').hover(
+            function(){
+
+                var parent = $(this).parents('.part');
+                parent.addClass('hovered');
+
+            },
+            function(){
+
+                var parent = $(this).parents('.part');
+                parent.removeClass('hovered');
+
+            }
+        );
+    }
+
+/* index page hover */
+
 
 $(document).ready(function(){
 
     indexPageSize();
+    indexPageHover();
+    indexPageBackgroundSize();
 
 });
 
 $(window).load(function(){
+
+    /* prety show for index-page */
+
+        setTimeout(function(){
+            $('.index-page').addClass('loaded');
+        }, 1000)
+
+    /* /prety show for index-page */
 
 });
 
