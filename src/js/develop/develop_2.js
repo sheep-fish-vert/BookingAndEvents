@@ -1,6 +1,7 @@
  /* plugin */ 
 
  /* plugin */
+ var wall;
 $(document).ready(function(){
     
 
@@ -29,39 +30,17 @@ $(document).ready(function(){
   }
   
   if( $('.main').find('#portfolio-conteiner').length == 1 ){
-      
+
       var wall = new Freewall("#portfolio-conteiner");
       wall.reset({
         selector: '.box',
         animate: true,
-        cellW: 400,
         cellH: 400,
-        draggable: true,
-        onResize: function() {
-            wall.fitWidth();
-        },
-        onBlockMove: function() {
-            wall.fitWidth();
-        }
-    });
-    wall.fitWidth();
-      
-  }
-  
-  
- /* 
-  if( $('.main').find('#artist-list').length == 1 ){
-      console.log('tyt');
-      var wall = new Freewall("#artist-list");
-      wall.reset({
-        selector: '.box',
-        animate: true,
-        cellW: 280,
-        cellH: 100,
-        fixSize: 0,
+        cellW: 400,
+        fixSize: 1,
         gutterX: 20,
         gutterY: 10,
-        draggable: true,
+       // draggable: true,
         onResize: function() {
             wall.fitWidth();
         },
@@ -70,9 +49,10 @@ $(document).ready(function(){
         }
     });
     wall.fitWidth();
+
       
   }
-  */
+  
   
 });
 
@@ -81,5 +61,5 @@ $(window).load(function(){
 });
 
 $(window).resize(function(){
-
+    
 });

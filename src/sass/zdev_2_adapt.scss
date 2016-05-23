@@ -1,8 +1,11 @@
 @media screen and (max-width: 1920px){
 
 }
-@media screen and (max-width: 1600px){
-
+@media screen and (max-width: 1380px){
+    
+    .listener .convertation ul.portfolio-conteiner {display: none;}
+    .listener .convertation ul.portfolio-conteiner-ado{display: block;}
+        
 }
 @media screen and (max-width: 1366px){
     .listener{ 
@@ -35,6 +38,10 @@
             }
         }
     }
+    
+    .listener .convertation ul.portfolio-conteiner li {width: 100%; height: 400px;
+        .item{overflow: hidden; width: 100%; height: 100%;}
+     }
 
 }
 @media screen and (max-width: 767px){
