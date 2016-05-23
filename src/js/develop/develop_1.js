@@ -43,14 +43,11 @@
 
                     $('.part-circle').each(function(){
 
-                        var circleHeight = $(this).height();
                         var textItem = $(this).find('.part-circle-text');
-                        var textHeight = textItem.height();
                         var titleTop = $(this).find('p span').position().top;
-
-                        var position = (circleHeight/2)-(textHeight/2)-titleTop;
-
-                        textItem.css('top', position);
+                        console.log($(this).height());
+                        var valueTop = 50 - ((titleTop*100)/$(this).height());
+                        textItem.css({'top':valueTop+'%'});
 
                     });
 
@@ -96,7 +93,6 @@
                 $('.part-background').each(function(){
 
                     var imgParams = [(-1)*($(this).find('img').height()/2), (-1)*($(this).find('img').width()/2)];
-                    console.log(imgParams);
 
                     $(this).find('img').css({'margin':imgParams[0]+'px 0 0 '+imgParams[1]+'px'});
 
