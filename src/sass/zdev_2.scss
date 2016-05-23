@@ -12,8 +12,9 @@
         }
         
         
-        .artist-list{ overflow: hidden; width: 30%; float: left ; margin: 0 calc(10%/6); position: relative; padding: 0;// display: flex; align-items: center; justify-content: space-around; align-content: space-between;
-            li{ display: block; margin-bottom: 40px; max-width: 560px; float: left; min-width: 256px; min-height: 256px;
+        .artist-list{ overflow: hidden; width: 30%; float: left ; margin: 0 calc(10%/6); position: relative; padding: 0;}
+        ul{
+             li{ display: block; margin-bottom: 40px; max-width: 560px; float: left; min-width: 256px; min-height: 256px;
                 .item{ position: relative;
                     .conteiner-s{overflow: hidden; position: relative; 
                         .image-block{width: 100%;

@@ -27,6 +27,28 @@ $(document).ready(function(){
     wall.fitWidth();
       
   }
+  
+  if( $('.main').find('#portfolio-conteiner').length == 1 ){
+      
+      var wall = new Freewall("#portfolio-conteiner");
+      wall.reset({
+        selector: '.box',
+        animate: true,
+        cellW: 400,
+        cellH: 400,
+        draggable: true,
+        onResize: function() {
+            wall.fitWidth();
+        },
+        onBlockMove: function() {
+            wall.fitWidth();
+        }
+    });
+    wall.fitWidth();
+      
+  }
+  
+  
  /* 
   if( $('.main').find('#artist-list').length == 1 ){
       console.log('tyt');
