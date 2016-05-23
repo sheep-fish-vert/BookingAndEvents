@@ -2,10 +2,7 @@
 
 }
 @media screen and (max-width: 1380px){
-    
-    .listener .convertation ul.portfolio-conteiner {display: none;}
-    .listener .convertation ul.portfolio-conteiner-ado{display: block;}
-        
+  
 }
 @media screen and (max-width: 1366px){
     .listener{ 
@@ -46,6 +43,16 @@
 }
 @media screen and (max-width: 767px){
     .listener .upper-text{column-count: 1; column-gap: 0px; padding: 25px 0;}
+    
+    
+    /* tiltli */
+    .title-text {
+        h2 { color: #eeae31; font-size: 36px;}
+        .soc-block .fb { top: 15px; }
+        .soc-block .inst { bottom: 15px; }
+    }
+    
+    /* titli */
 }
 @media screen and (max-width: 666px){
 

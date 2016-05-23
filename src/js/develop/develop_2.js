@@ -30,7 +30,7 @@ $(document).ready(function(){
   }
   
   if( $('.main').find('#portfolio-conteiner').length == 1 ){
-
+/*
       var wall = new Freewall("#portfolio-conteiner");
       wall.reset({
         selector: '.box',
@@ -50,7 +50,7 @@ $(document).ready(function(){
     });
     wall.fitWidth();
 
-      
+  */    
   }
   
   
