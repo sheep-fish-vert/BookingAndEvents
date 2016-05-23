@@ -1,4 +1,24 @@
 @media screen and (max-width: 1920px){
+	header{ 
+		.wrapper{
+			.mbox{
+				img{
+				}
+				nav{
+					a{
+						&:hover{
+						}
+					}
+				}
+				.language-button{ 
+					a{ 
+						&:hover{
+						}
+					}
+				}
+			}
+		}
+	}
 
 }
 @media screen and (max-width: 1600px){
@@ -14,7 +34,26 @@
 
 }
 @media screen and (max-width: 992px){
-
+	header{ 
+		.wrapper{
+			.mbox{
+				img{
+				}
+				nav{ width: 700px; padding: 0px 40px 0px 80px;
+					a{
+						&:hover{
+						}
+					}
+				}
+				.language-button{ 
+					a{ 
+						&:hover{
+						}
+					}
+				}
+			}
+		}
+	}
 }
 @media screen and (max-width: 767px){
 	.about-us{
@@ -30,19 +69,103 @@
 					img{}
 				}
 			}
-			.about-us-text{
+			.about-us-text{padding-bottom: 500px;
 				p{ 
 					
 				}
 			}
 		}
 	}
+
+	header{ 
+		.wrapper{
+			.mbox{
+				img{
+				}
+				nav{ width: 700px; padding: 0px 0px 0px 40px;
+					a{padding: 0 10px;
+						&:hover{
+						}
+					}
+				}
+				.language-button{ 
+					a{ 
+						&:hover{
+						}
+					}
+				}
+			}
+		}
+	}
 }
 @media screen and (max-width: 666px){
+	.about-us{
+		.mbox{
+			h2{
+				
+			}
+			.soc-block{
+				.inst{
+					img{}
+				}
+				.fb{
+					img{}
+				}
+			}
+			.about-us-text{padding-bottom: 600px;column-count: 1;
+				p{ 
+					
+				}
+			}
+		}
+	}
+	
+	header{ 
+		.wrapper{
+			.mbox{
+				img{
+				}
+				nav{ width: 700px; max-height: 100%; padding: 0px 0px 0px 20px; flex-wrap: wrap; justify-content: center; 
+					a{padding: 0 10px;line-height: 100%;
+						&:hover{
+						}
+						&:last-child{
+							
+						}
+					}
+				}
+				.language-button{ 
+					a{ 
+						&:hover{
+						}
+					}
+				}
+			}
+		}
+	}
 
 }
 @media screen and (max-width: 479px){
-
+	.about-us{
+		.mbox{
+			h2{
+				
+			}
+			.soc-block{
+				.inst{
+					img{}
+				}
+				.fb{
+					img{}
+				}
+			}
+			.about-us-text{padding-bottom: 800px;
+				p{ 
+					
+				}
+			}
+		}
+	}
 }
 @media screen and (max-width: 320px){
 
