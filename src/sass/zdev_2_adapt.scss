@@ -68,6 +68,20 @@
             .contact-form-textarea{padding: 10px 0 20px;}
         }
     /* contact */
+    
+    /* pagi */ 
+        .pagi-wrap .top-pagi {
+            .prew { padding: 0;
+                span{display: none;}
+                &:before{left: 0; }
+            }
+            .back-to-port {padding-top: 10px;}
+            .next { padding: 0;
+                &:before{right: 0; }
+                span{display: none;}
+            }
+        }
+    /* pagi */
 }
 @media screen and (max-width: 666px){
 
