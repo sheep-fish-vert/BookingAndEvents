@@ -54,6 +54,17 @@
 }
 
 
+.title-text{ position: relative; padding-right: 40px; text-align: center;
+    h2{color: rgb(238, 174, 49); font-size: 72px; font-family: "Helvetica", sans-serif; font-weight: bold; text-transform: uppercase; margin: 0; padding: 35px 0;}
+    .soc-block{position: absolute; right: 0; width: 30px; top: 0; bottom: 0;
+        a{text-decoration: none; display: block; position: absolute; border-radius: 50%; overflow: hidden; transition: all 0.3s;
+            &:hover{background-color: rgba(48,32,16,0.4);}
+        }
+        .fb{top: 35px;}
+        .inst{bottom: 35px;}
+    }
+}
+
 /* plugin */ 
 
 /* plugin */
