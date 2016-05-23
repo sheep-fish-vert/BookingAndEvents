@@ -67,10 +67,50 @@
     }
 /* titles */ 
 
-.contact-us{ background-image: url(../images/about-bg.jpg); background-position: bottom;
+/* button */
 
-    #mapper{height: 540px;}
-}
+    button{width: 100%; height: 53px; background-color: #eeae31; border-radius: 18px; border: none; outline: none; transition: all 0.5s;
+        span{ text-transform: uppercase; font-weight: 500; font-size: 14px; font-family: "Helvetica", sans-serif;  color: rgb(7, 7, 7); line-height: 1.2;  }
+        &:hover{background-color: #DA9716;}
+    }            
+
+/* button */
+
+/* contacts */
+
+    .contact-us{ background-image: url(../images/about-bg.jpg); background-position: bottom; background-repeat: no-repeat; padding-bottom: 370px;
+        .text-list{ padding-bottom: 40px;
+            ul{list-style: none;}
+            li{ text-align: center;  font-size: 18px; font-family: "Helvetica", sans-serif; color: rgb(55, 55, 55); line-height: 1.2; padding: 10px 0;
+                b{ font-weight: 700;}
+                span, a{display: inline; text-decoration: none; color: rgb(55, 55, 55);}
+            }
+        }
+        #mapper{height: 540px;margin: 0 -15px; width: calc(100% + 30px); }
+        .form{width: 100%; padding-top: 40px;
+            .row{ width: 100%; padding: 10px 0;
+                .contact-form-row{  
+                    .contact-form-item{ width: 48%; float: left;
+                        &:nth-child(2){float: right;}                    
+                    }
+                }
+                textarea, input{ width: 100%; height: 52px; border: 1px solid #e2e2e2; background-color: transparent; border-radius: 18px; padding-left: 30px;  font-size: 14px;   font-family: "Helvetica", sans-serif;  color: rgb(167, 167, 167); font-weight: 300;  line-height: 1.2;}
+                input, textarea{
+                    &::-webkit-input-placeholder {color: rgb(167, 167, 167); }
+                    &:-moz-placeholder {color: rgb(167, 167, 167); opacity:1;}
+                    &::-moz-placeholder {color: rgb(167, 167, 167); opacity:1;}
+                    &:-ms-input-placeholder {color: rgb(167, 167, 167); }
+                }
+                textarea{ width: 100%; height: 157px; padding-top: 20px; line-height: 1.2; resize: none; }
+            }
+            .contact-form-row-submit{ max-width: 280px;
+                
+            }
+        }
+    }
+
+/* contacts */
+
 
 
 

@@ -46,13 +46,25 @@
     
     
     /* tiltli */
-    .title-text {
-        h2 { color: #eeae31; font-size: 36px;}
-        .soc-block .fb { top: 15px; }
-        .soc-block .inst { bottom: 15px; }
-    }
+        .title-text {
+            h2 { color: #eeae31; font-size: 36px;}
+            .soc-block .fb { top: 15px; }
+            .soc-block .inst { bottom: 15px; }
+        }
     
     /* titli */
+    
+    /* contact */
+        .contact-us {     padding-bottom: 280px;
+            .text-list { padding-bottom: 10px;}
+            #mapper { height: 450px;}
+            .form .row{ padding: 0;
+                .contact-form-row .contact-form-item { width: 100%; float: none; padding: 10px 0;}                
+            }
+            .form .contact-form-row-submit{max-width: 100%; width: 100%;}
+            .contact-form-textarea{padding: 10px 0 20px;}
+        }
+    /* contact */
 }
 @media screen and (max-width: 666px){
 
