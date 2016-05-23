@@ -138,12 +138,13 @@ $(window).load(function(){
 });
 
 $(window).resize(function(){
-    
-    if ($(window).width() < 768) {
-        map.set('draggable', false);
+    if ($('.main').find('#mapper').length == 1 ){
+        if ($(window).width() < 768) {
+            map.set('draggable', false);
+        }
+        else {
+            map.set('draggable', true);
+        };
     }
-    else {
-        map.set('draggable', true);
-    };
 
 });
