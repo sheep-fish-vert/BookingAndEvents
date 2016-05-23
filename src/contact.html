@@ -19,92 +19,95 @@
                     </div>
                 </div>
             </div>
-            <div class="contact-wrap">
-                <div class="text-list">
-                    <ul>
-                        <li>
-                            <b>Address </b>
-                            <a href=""> ​44135 Germany Dortmund, Schliepstr. 4 </a>
-                        </li>
-                        <li>
-                            <b>Email :</b>
-                            <a href=""> info@bmglive.de </a>
-                        </li>
-                        <li>
-                            <b>Phone : </b>
-                            <a href=""> + 49 231 282 12 721 </a>
-                        </li>
-                        <li>
-                            <b>Fax :</b>
-                            <a href=""> + 49 231 282 12 722</a>
-                        </li>
-                        <li>
-                            <b>VAT :</b>
-                            <a href=""> DE265534896 </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="map">
-                    <div id="mapper"></div>
-                </div>
-                <div class="form">
-                    <form action="ajax.php" name="" class="contact-form">
-                        <div class="row">
-                            <div class="contact-form-row cfix">
-                                <div class="contact-form-item">
-                                    <div class="contact-form-item-input form_row">
-                                        <div class="form_input">
-                                            <input type="text" name="contact_name" required="required" value="" placeholder="Имя">
+            
+            <div class="mbox">
+                <div class="contact-wrap">
+                    <div class="text-list">
+                        <ul>
+                            <li>
+                                <b>Address :</b>
+                                <span> ​44135 Germany Dortmund, Schliepstr. 4 </span>
+                            </li>
+                            <li>
+                                <b>Email :</b>
+                                <a href="mailto:info@bmglive.de"> info@bmglive.de </a>
+                            </li>
+                            <li>
+                                <b>Phone : </b>
+                                <a href="callto:+4923128212721"> + 49 231 282 12 721 </a>
+                            </li>
+                            <li>
+                                <b>Fax :</b>
+                                <a href="callto:+4923128212722"> + 49 231 282 12 722</a>
+                            </li>
+                            <li>
+                                <b>VAT :</b>
+                                <span> DE265534896 </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="map">
+                        <div id="mapper"></div>
+                    </div>
+                    <div class="form">
+                        <form action="ajax.php" name="" class="cot-form">
+                            <div class="row">
+                                <div class="contact-form-row cfix">
+                                    <div class="contact-form-item">
+                                        <div class="contact-form-item-input form_row">
+                                            <div class="form_input">
+                                                <input type="text" name="contact_name" required="required" value="" placeholder="Имя">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="contact-form-item">
-                                    <div class="contact-form-item-input form_row">
-                                        <div class="form_input">
-                                            <input type="text" name="contact_second_name" value="" required="required" placeholder="Фамилия">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="contact-form-row cfix">
-                                <div class="contact-form-item">
-                                    <div class="contact-form-item-input form_row">
-                                        <div class="form_input">
-                                            <input type="text" name="contact_email" required="required" value="" placeholder="E-mail">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="contact-form-item">
-                                    <div class="contact-form-item-input form_row">
-                                        <div class="form_input">
-                                            <input type="text" name="contact_tel" value="" required="required" placeholder="Телефон" class="tel-mask">
+                                    <div class="contact-form-item">
+                                        <div class="contact-form-item-input form_row">
+                                            <div class="form_input">
+                                                <input type="text" name="contact_second_name" value="" required="required" placeholder="Фамилия">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="contact-form-row cfix">
-                                <div class="contact-form-item">
-                                    <div class="contact-form-item-input form_row">
-                                        <div class="form_input">
-                                            <textarea name="massage" placeholder="Сообщение"></textarea>
+                            <div class="row">
+                                <div class="contact-form-row cfix">
+                                    <div class="contact-form-item">
+                                        <div class="contact-form-item-input form_row">
+                                            <div class="form_input">
+                                                <input type="text" name="contact_email" required="required" value="" placeholder="E-mail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-form-item">
+                                        <div class="contact-form-item-input form_row">
+                                            <div class="form_input">
+                                                <input type="text" name="contact_tel" value="" required="required" placeholder="Телефон" class="tel-mask">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                            
-                        <div class="contact-form-row-submit cfix">
-                            <div class="contact-form-item">
-                                <button type="submit" class="contact-submit">
-                                    <span>Отправить</span>
-                                </button>
+                            <div class="row">
+                                <div class="contact-form-row cfix">
+                                    <div class="contact-form-textarea">
+                                        <div class="contact-form-item-textarea form_row">
+                                            <div class="form_input">
+                                                <textarea name="massage" placeholder="Сообщение" required="required"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                                
+                            <div class="contact-form-row-submit cfix">
+                                <div class="contact-form-item">
+                                    <button type="submit" class="contact-submit">
+                                        <span>Отправить</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

@@ -32,13 +32,7 @@ function googleMap(mapWrap){
             map: map,
             animation: google.maps.Animation.DROP, // анимация при загрузке карты
             //icon: image //  иконка картинкой
-            icon: {                               //маркер на svg
-                path: SQUARE_PIN,
-                fillColor: '#fff',
-                fillOpacity: 0.7,
-                strokeColor: '#FF3232',
-                strokeWeight: 5
-            },
+            icon: image
         });
 
         /*анимация при клике на маркер*/
