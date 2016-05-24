@@ -58,3 +58,56 @@ header{ max-height: 155px; background: #2d2d2d;
 		}
 	}
 }
+
+
+#call-popup{ max-width: 40%; margin: 150px auto;
+	.contact-form{
+		.contact-form-title{ text-align: center; text-transform: uppercase;
+			h5{font-size: 38px; font-weight: 30; 
+				
+			}
+		}
+		.contact-form-row{
+			.contact-form-item{
+				.contact-form-item-input{
+					.form_input{
+						input{margin: 10px 0px; width: 100%; border: none; border-radius: 18px; height: 53px; background-color: #fff; padding: 0px 0px 0px 30px; box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.75);
+							
+							&::-webkit-input-placeholder {font-size:14px; color: #a7a7a7;}
+                            &:-moz-placeholder {font-size:14px; color: #a7a7a7;}
+                            &::-moz-placeholder {font-size:14px; color: #a7a7a7;}
+                            &:-ms-input-placeholder {font-size:14px; color: #a7a7a7;}
+							
+						}
+					}
+				}
+				.contact-submit{
+					
+				}
+			}	
+		}
+	}
+}
+
+.fancybox-skin{
+	border-radius: 40px;
+	-webkit-box-shadow: 0 0 100px 500px rgba(0, 0, 0, 0.5)!important;
+	        box-shadow: 0 0 100px 500px rgba(0, 0, 0, 0.5)!important;
+	background: rgba(255, 255, 255, 0.3);
+}
+.errorText{
+	display: none!important;
+}
+
+.error{
+	.form_input{ 
+			input{border: 3px solid red!important; box-shadow: none!important;}
+		}
+}
+
+.fancybox-close{ background-image: url('../../images/popup-cross.png'); background-repeat: no-repeat; background-position: 50% 50%; top: 10px; right: 10px;
+}
+	
+
+
+
