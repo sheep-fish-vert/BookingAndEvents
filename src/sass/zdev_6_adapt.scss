@@ -144,6 +144,22 @@
 		}
 	}
 
+	.booking_partners{
+		.partners-heading-wrapper{ 
+			.booking-partners-heading{ font-size: 38px; width: 340px;
+
+			}	
+		}
+		.partners-table{
+			tr{
+				td{
+					img{
+						
+					}
+				}
+			}
+		}
+	}
 }
 @media screen and (max-width: 479px){
 	.about-us{
@@ -162,6 +178,23 @@
 			.about-us-text{padding-bottom: 800px;
 				p{ 
 					
+				}
+			}
+		}
+	}
+
+	.booking_partners{
+		.partners-heading-wrapper{ 
+			.booking-partners-heading{ font-size: 30px; width: 270px;
+
+			}	
+		}
+		.partners-table{
+			tr{
+				td{
+					img{
+						
+					}
 				}
 			}
 		}
