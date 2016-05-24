@@ -27,9 +27,8 @@ header{ max-height: 155px; background: #2d2d2d;
 				}
 			}
 			nav{display: flex; justify-content: space-between; width: 800px; padding: 0px 140px 0px 180px; align-items: center;
-				a{display:block; padding: 0 20px; font-size: 14px; color: #fff; text-decoration: none; vertical-align: center; 
-					&:hover{color: #659bca;	
-					}
+				a{display:block; padding: 0 20px; font-size: 14px; color: #fff; text-decoration: none; vertical-align: middle; transition: all 0.3s;
+					
 				}
 			}
 			.language-button{ order: 1; align-self: center;
@@ -41,6 +40,15 @@ header{ max-height: 155px; background: #2d2d2d;
 		}
 	}
 }
+
+.about-us header .wrapper .mbox a:hover{color: #ffa900;}
+.artist_list header .wrapper .mbox a:hover{color: #ffa900;}
+.booking header .wrapper .mbox a:hover{color: #6ca8db;}
+.contact header .wrapper .mbox a:hover{color: #ffa900;}
+.events header .wrapper .mbox a:hover{color: #e25585;}
+.portfolio header .wrapper .mbox a:hover{color: #ffa900;}
+.portfolio_open header .wrapper .mbox a:hover{color: #ffa900;}
+
 
 .booking_partners{
 	.partners-heading-wrapper{ padding: 20px 0;
