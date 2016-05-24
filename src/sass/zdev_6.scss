@@ -11,8 +11,44 @@
 				img{}
 			}
 		}
-		.about-us-text{padding-bottom: 400px;
+		.about-us-text{padding:23px 0px 400px 0px;
 			p{ text-align: left;
+				
+			}
+		}
+	}
+}
+
+header{ max-height: 155px; background: #2d2d2d;
+	.wrapper{width: 100%;
+		.mbox{display: flex; justify-content: space-between;
+			img{padding: 30px 0 40px 0;	
+			}
+			nav{display: flex; justify-content: space-between; width: 800px; padding: 0px 140px 0px 180px; align-items: center;
+				a{display:block; padding: 0 20px; font-size: 14px; color: #fff; text-decoration: none; vertical-align: center; 
+					&:hover{color: #659bca;	
+					}
+				}
+			}
+			.language-button{ order: 1; align-self: center;
+				a{ text-transform: uppercase; text-decoration: none; color: #fff; padding: 0px 20px;
+					&:hover{color: #659bca;
+					}
+				}
+			}
+		}
+	}
+}
+
+.booking_partners{
+	.partners-heading-wrapper{ padding: 20px 0;
+		.booking-partners-heading{ margin: 0 auto; text-transform: uppercase;width: 430px; padding: 10px 0;font-size: 48px; border-top: 5px solid #444444; border-bottom: 5px solid #444444; color: #444444;
+
+		}	
+	}
+	.partners-table{
+		tr{
+			td{
 				
 			}
 		}
