@@ -161,6 +161,19 @@ $(document).ready(function(){
         $('.slick-next').click();
     });
 /* slider clients */
+
+
+/* fix name  band */ 
+    
+    if ($('.main').find('.str-box').length == 1 ){
+        if ($(window).width() > 1024) {
+            $('.about-block p:first').css('padding-top', $('.super-title').height() + 110 );
+        } else{
+            $('.about-block p:first').css('padding-top', 0 );
+        }
+    }
+
+/* fix name */
   
 });
 
@@ -180,5 +193,17 @@ $(window).resize(function(){
         };
     }
 /* map */
+
+/* fix name  band */ 
+    
+    if ($('.main').find('.str-box').length == 1 ){
+        if ($(window).width() > 1024) {
+            $('.about-block p:first').css('padding-top', $('.super-title').height() + 110 );
+        } else{
+            $('.about-block p:first').css('padding-top', 0 );
+        }
+    }
+
+/* fix name */
 
 });

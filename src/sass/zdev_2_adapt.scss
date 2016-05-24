@@ -1,8 +1,17 @@
 @media screen and (max-width: 1920px){
 
 }
-@media screen and (max-width: 1380px){
-  
+@media screen and (max-width: 1700px){
+    
+    /* top slid events */ 
+        
+        .top-sl .str-box{padding: 100px 160px 550px;
+            .super-image {width: calc(100% - 480px);}
+            .soc-chick {left: calc(100% - 460px);}
+        }
+        
+        
+    /* top slid events */ 
 }
 @media screen and (max-width: 1366px){
     .listener{ 
@@ -14,6 +23,12 @@
 
 }
 @media screen and (max-width: 1280px){
+    /* top slid events */ 
+        
+        .top-sl .str-box{padding: 20px 20px 550px; }
+        
+        
+    /* top slid events */ 
 
 }
 @media screen and (max-width: 1024px){
@@ -25,6 +40,27 @@
         }
         .convertation .artist-list li .item .conteiner-s .hovered-block .shaped { width: 120%;   height: 100%;}
     }
+    
+    
+    /* top slid events */ 
+    
+        .top-sl {
+            .str-box {
+                .soc-chick {display: none; }
+                .super-image { width: 50%; }
+            }
+            .super-title { position: relative; top: 0;
+                h2{text-align: center; padding-bottom: 30px; padding-top: 30px; font-size: 96px;}
+                .soc-in-title{display: block; width: 100px; left: calc(50% - 50px); bottom: 0; display: flex; align-items: cemter; justify-content: space-between;
+                    a{display: inline-block;}
+                }
+            } 
+            .arrows{right: calc(50% - 155px/2);}            
+        }
+
+        
+    /* top slid events */ 
+    
 }
 @media screen and (max-width: 992px){
     .listener{ 
@@ -106,6 +142,18 @@
 
     /* clients */
     
+    /* top slid events */ 
+    
+        .top-sl {
+            .str-box {
+                .super-image { width: 100%; max-width: 320px; float: none; margin: 0 auto; }
+            }   
+            .super-title h2 {font-size: 64px; word-break: break-all; }     
+        }
+        
+        
+    /* top slid events */ 
+    
 }
 @media screen and (max-width: 666px){
 
@@ -136,6 +184,12 @@
         }
 
     /* qestion */
+    
+    /* top slid events */ 
+    
+        .top-sl .super-title h2 {font-size: 48px; padding: 40px 0;}
+        
+    /* top slid events */ 
 }
 @media screen and (max-width: 320px){
 
