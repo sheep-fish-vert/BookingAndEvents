@@ -93,29 +93,6 @@ $(document).ready(function(){
         
     }
     
-    if( $('.main').find('#portfolio-conteiner').length == 1 ){
-    /*
-        var wall = new Freewall("#portfolio-conteiner");
-        wall.reset({
-            selector: '.box',
-            animate: true,
-            cellH: 400,
-            cellW: 400,
-            fixSize: 1,
-            gutterX: 20,
-            gutterY: 10,
-        // draggable: true,
-            onResize: function() {
-                wall.fitWidth();
-            },
-            onBlockMove: function() {
-                wall.fitWidth();
-            }
-        });
-        wall.fitWidth();
-
-    */    
-    }
 /* plugin wall */ 
 
 
@@ -174,7 +151,8 @@ $(document).ready(function(){
     }
 
 /* fix name */
-  
+ 
+
 });
 
 $(window).load(function(){

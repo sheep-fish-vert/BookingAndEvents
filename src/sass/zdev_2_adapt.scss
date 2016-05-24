@@ -1,6 +1,19 @@
-@media screen and (max-width: 1920px){
-
+@media screen and (max-width: 1780px){
+    
+    /* bad list */
+        .listener{
+            .convertation ul.portfolio-conteiner{  max-width: 1320px; margin: 0 auto; padding: 0;
+            
+                li.box { width: 440px; height: 440px;}
+                
+                
+            }
+        }
+    /* bad list */
 }
+
+
+
 @media screen and (max-width: 1700px){
     
     /* top slid events */ 
@@ -20,6 +33,16 @@
         }
         .adolist-1920{display: none;}
     }
+    
+    /* bad list */
+        .listener{
+            .convertation ul.portfolio-conteiner{  max-width: 880px; margin: 0 auto; padding: 0;
+            
+                li.box { width: 440px; height: 440px;}              
+                
+            }
+        }
+    /* bad list */
 
 }
 @media screen and (max-width: 1280px){
@@ -75,6 +98,17 @@
     .listener .convertation ul.portfolio-conteiner li {width: 100%; height: 400px;
         .item{overflow: hidden; width: 100%; height: 100%;}
     }
+    
+    
+    /* bad list */
+        .listener{
+            .convertation ul.portfolio-conteiner{  max-width: 440px; margin: 0 auto; padding: 0;
+            
+                li.box { width: 440px; height: 440px;}              
+                
+            }
+        }
+    /* bad list */
     
     /* qestion */
         
@@ -190,7 +224,20 @@
         .top-sl .super-title h2 {font-size: 48px; padding: 40px 0;}
         
     /* top slid events */ 
+    
+    /* bad list */
+        .listener{
+            .convertation ul.portfolio-conteiner{  max-width: 100%; margin: 0 auto; padding: 0;
+            
+                li.box { width: 100%; height: 440px; padding: 10px 0;}              
+                
+            }
+        }
+        
+    /* bad list */
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 420px){
+    .listener .convertation ul li .item .conteiner-s .hovered-block .shaped { width: 100%;height: 250px;}
+    
 
 }
