@@ -38,7 +38,16 @@
     
     .listener .convertation ul.portfolio-conteiner li {width: 100%; height: 400px;
         .item{overflow: hidden; width: 100%; height: 100%;}
-     }
+    }
+    
+    /* qestion */
+        
+        .convert-qestion{
+            .title-q h2 { font-size: 36px; }
+            .sub-q p { font-size: 24px; }
+        }
+
+    /* qestion */
 
 }
 @media screen and (max-width: 767px){
@@ -82,6 +91,8 @@
             }
         }
     /* pagi */
+    
+    
 }
 @media screen and (max-width: 666px){
 
@@ -103,6 +114,15 @@
             }
         }
     }
+    
+    /* qestion */
+        
+        .convert-qestion { padding: 50px 0;
+            .title-q h2 { font-size: 26px; }
+            .sub-q p { font-size: 14px; }
+        }
+
+    /* qestion */
 }
 @media screen and (max-width: 320px){
 

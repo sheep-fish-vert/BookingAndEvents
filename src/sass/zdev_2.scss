@@ -85,7 +85,8 @@
             ul{list-style: none;}
             li{ text-align: center;  font-size: 18px; font-family: "Helvetica", sans-serif; color: rgb(55, 55, 55); line-height: 1.2; padding: 10px 0;
                 b{ font-weight: 700;}
-                span, a{display: inline; text-decoration: none; color: rgb(55, 55, 55);}
+                span, a{display: inline; text-decoration: none; color: rgb(55, 55, 55); transition: all 0.3s;}
+                a:hover{color: #ffa900; }
             }
         }
         #mapper{height: 540px;margin: 0 -15px; width: calc(100% + 30px); }
@@ -150,6 +151,40 @@
     
 /* paginatop block */ 
 
+
+/* booking qestions */
+    
+    .convert-qestion { padding: 110px 0 100px;
+        &.bg-q-on-booking{ background-image: url(../images/bg-q-on-booking.jpg); background-size: cover; background-position: center center; 
+            .butt{
+                .button{ background-color: #8ecdf6; color: white;
+                    &:hover{background-color: white; color: #8ecdf6 ;}
+                }
+            }
+        }
+        &.bg-q-on-events{ background-image: url(../images/bg-q-on-booking.jpg); background-size: cover; background-position: center center; 
+            .butt{
+                .button{ background-color: #d5517b; color: white;
+                    &:hover{background-color: white; color: #d5517b; }
+                }
+            }
+        }
+        
+        .title-q { 
+            h2{font-size: 72px; font-family: "Helvetica", sans-serif; color: rgb(255, 255, 255); text-transform: uppercase;  line-height: 1.2; font-weight: 900; text-align: center; margin: 0;}
+        }
+        .sub-q{ padding-bottom: 40px;
+            p{ font-size: 30px; font-family: "Helvetica", sans-serif; color: rgb(255, 255, 255); line-height: 1.2; margin: 0; text-align: center;}
+        }
+        .butt{
+            .button{max-width: 480px; margin: 0 auto; height: 62px; border-radius: 31px;  text-decoration: none; display: flex; justify-content: center; align-items: center; color: white; font-size: 16px;  font-family: "Helvetica", sans-serif; text-transform: uppercase; font-weight: 500;line-height: 1.2; transition: all 0.5s;
+                &:hover{background-color: white; }
+            }
+        }
+    }
+   
+    
+/* booking qestions */
 
 /* plugin */ 
 
