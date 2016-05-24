@@ -92,6 +92,19 @@
         }
     /* pagi */
     
+    /* clients */ 
+        .conteiner-cli { margin: 0;
+            .title-cli h2 { font-size: 36px; padding-top: 20px; padding-bottom: 20px; }
+        }
+        
+        .conteiner-cli .slider-block { padding: 0;
+            .arrow-prew {display: none;}
+            .arrow-next{display: none;}
+        }
+        
+        .slick-slider .slick-list { padding: 0 !important; } 
+
+    /* clients */
     
 }
 @media screen and (max-width: 666px){

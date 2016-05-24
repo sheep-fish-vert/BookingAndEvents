@@ -154,22 +154,7 @@
 
 /* booking qestions */
     
-    .convert-qestion { padding: 110px 0 100px;
-        &.bg-q-on-booking{ background-image: url(../images/bg-q-on-booking.jpg); background-size: cover; background-position: center center; 
-            .butt{
-                .button{ background-color: #8ecdf6; color: white;
-                    &:hover{background-color: white; color: #8ecdf6 ;}
-                }
-            }
-        }
-        &.bg-q-on-events{ background-image: url(../images/bg-q-on-booking.jpg); background-size: cover; background-position: center center; 
-            .butt{
-                .button{ background-color: #d5517b; color: white;
-                    &:hover{background-color: white; color: #d5517b; }
-                }
-            }
-        }
-        
+    .convert-qestion { padding: 110px 0 100px;    
         .title-q { 
             h2{font-size: 72px; font-family: "Helvetica", sans-serif; color: rgb(255, 255, 255); text-transform: uppercase;  line-height: 1.2; font-weight: 900; text-align: center; margin: 0;}
         }
@@ -182,9 +167,95 @@
             }
         }
     }
+    
+    .booking{
+        .convert-qestion { background-image: url(../images/bg-q-on-booking.jpg); background-size: cover; background-position: center center; 
+            .butt{
+                .button{ background-color: #8ecdf6; color: white;
+                    &:hover{background-color: white; color: #8ecdf6 ;}
+                }
+            }
+        }
+    }
+    
+    .events{
+        .convert-qestion{ background-image: url(../images/bg-q-on-booking.jpg); background-size: cover; background-position: center center; 
+            .butt{
+                .button{ background-color: #d5517b; color: white;
+                    &:hover{background-color: white; color: #d5517b; }
+                }
+            }
+        }
+    }
    
     
 /* booking qestions */
+
+
+/* clients */ 
+    .conteiner-cli{ margin-top: - 20px; padding-bottom: 70px;
+        .title-cli{ text-align: center;
+            h2{margin: 0; font-size: 65px; font-weight: 900; font-family: "Helvetica", sans-serif;   color: rgb(226, 85, 133); text-transform: uppercase;  line-height: 1.2;}
+        }  
+        .slider-block{position: relative; width: 100%; overflow: hidden; padding: 0 70px;
+            .cont-slid{min-height: 450px;}
+            .item{ ;
+                .conteiner{max-width: 320px; padding-bottom: 30px; margin: 0 auto;}
+                .top-face{  width: 100%; 
+                    .cont{ margin: 0 auto; border-radius: 50%; width: 260px; height: 260px; overflow: hidden; position: relative; transition: all 0.5s;
+                        img{position: absolute; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%); max-width: none;}
+                    }
+                }
+                .name{ padding-top: 28px; font-size: 24px; font-family: "Helvetica", sans-serif;   color: rgb(44, 44, 44); font-weight: bold; text-align: center;}
+                .text{ padding-top: 28px; font-size: 14px; font-family: "Helvetica", sans-serif;   color: rgb(110, 110, 110); line-height: 1.2; text-align: center;}
+            }
+            
+            .slick-slide{ padding-top: 60px; opacity: 0; transition: all 0.3s;
+                .top-face .cont{ width: 200px; height: 200px;  }
+                .name{opacity: 0;}
+                .text{opacity: 0;}
+            }
+            
+            .slick-active{opacity: 1;}
+            
+            .slick-current{ padding: 0; transition: all 0.3s;
+                .top-face .cont{ width: 260px; height: 260px; }
+                .name{opacity: 1;}
+                .text{opacity: 1;}
+                
+                
+            }
+            .slick-prev{width: 0px; height: 0px; visibility: hidden; opacity: 0; pointer-events: none;}
+            
+            .arrow-prew{position: absolute; top: 50%; padding-left: 40px; cursor: pointer; left: 0;
+                &:before{ position: absolute; content: ''; width: 21px; height: 21px; border-top: 2px solid black; border-left: 2px solid black; transform: rotate(-45deg); left: 10px; top: -3px; }
+                &:hover{ color: #ffa900;
+                    &:before{border-top: 2px solid #ffa900; border-left: 2px solid #ffa900; }
+                }
+            }
+            
+            .arrow-next{position: absolute; top: 50%; padding-right: 40px; cursor: pointer; right: 0; transition: all 0.3s; 
+                &:before{ position: absolute; content: ''; width: 21px; height: 21px; border-top: 2px solid black; border-left: 2px solid black; transform: rotate(135deg); right: 10px; top: -3px; transition: all 0.3s;  }
+                &:hover{ color: #ffa900;
+                    &:before{border-top: 2px solid #ffa900; border-left: 2px solid #ffa900; }
+                }
+            }
+            
+            .slick-dots{
+                li {
+                    button:before {content: ''; width: 10px; height: 10px; background-color: #8b8b8b; border-radius: 50%; opacity: 1; transition: all 0.3;}
+                    &:hover{
+                        button:before { background-color: #d5527b;  opacity: 0.5;}
+                    }
+                    &.slick-active button:before {content: ''; width: 10px; height: 10px; background-color: #d5527b;}
+                }
+            }
+            
+        }  
+    }
+/* clients */
+
+
 
 /* plugin */ 
 
