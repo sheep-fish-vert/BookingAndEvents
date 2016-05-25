@@ -120,9 +120,11 @@ header{ max-height: 155px; background: #2d2d2d;
 		}
 }
 
-.fancybox-close{ background-image: url('../../images/popup-cross.png'); background-repeat: no-repeat; background-position: 50% 50%; top: 10px; right: 10px;
+.fancybox-close{ background: transparent; background-repeat: no-repeat; background-position: 50% 50%; 
 	&:hover{;
 	}
+	&:after{width: 10px; height: 2px; background: #b7bcc3;}
+	&:before{width: 10px; height: 2px; background: #b7bcc3;}
 }
 	
 .fancybox-wrap{
