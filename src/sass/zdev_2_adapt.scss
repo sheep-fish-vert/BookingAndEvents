@@ -61,6 +61,15 @@
         
         
     /* top slid events */ 
+    
+    
+    /* closed projects */
+    
+        .close-project-wrap .close-project-sl .convertation .close-project-slider li &:hover{
+                .conteiner-s:before { bottom: 0; right: 0;}
+            }
+    
+    /* closed projects */
 
 }
 @media screen and (max-width: 1024px){

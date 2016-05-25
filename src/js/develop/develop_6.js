@@ -2,9 +2,18 @@
 
 
 $(document).ready(function(){
+	
+	
 	$(".fancybox-form").fancybox({
 		//padding: [20, 120, 40, 120],
-		minHeight: 600,
+		openEffect  : 'fade',
+		closeEffect : 'fade',
+		autoResize:true,
+		wrapCSS:'fancybox-form',
+		'closeBtn' : true,
+		fitToView:true,
+		padding:'0',
+		//minHeight: 600,
 		fitToVie: true,
 		autoCenter: true,
 		helpers:{
@@ -15,6 +24,7 @@ $(document).ready(function(){
 			}
 		}	
 	});
+
 });
 
 $(window).load(function(){

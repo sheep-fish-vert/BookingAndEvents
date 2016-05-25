@@ -198,6 +198,7 @@ function Maskedinput(){
 }
 
 /*fansybox на форме*/
+
 function fancyboxForm(){
   $('.fancybox-form').fancybox({
     openEffect  : 'fade',
@@ -209,6 +210,7 @@ function fancyboxForm(){
     padding:'0'
   })
 }
+
 
 //ajax func for programmer
 
@@ -269,6 +271,6 @@ $(document).ready(function(){
     
    validate('#call-popup .contact-form', {submitFunction:validationCall});
    Maskedinput();
-   fancyboxForm();
+   //fancyboxForm();
 
 });

@@ -182,9 +182,9 @@ $(document).ready(function () {
     
     /* fix title up*/
    
-   if ($('.main').find('.tour-list').length == 1) {
-        waterfall('.tour-list');
-   }
+    if ($('.main').find('.tour-list').length == 1) {
+            waterfall('.tour-list');
+    }
    
    /* agency */
         if ($('.main').find('.agency').length == 1) {
@@ -200,6 +200,23 @@ $(document).ready(function () {
             });
         }
    /* agency */
+   
+   
+    /* closed projects */
+    
+        if ($('.main').find('.close-project-slider').length == 1) {
+            $('.close-project-slider').slick({
+            // slidesToShow: 4,
+               // centerMode: true,
+                variableWidth: true,
+                slidesToScroll: 1,
+                autoplay: true,
+                infinite: true,
+                autoplaySpeed: 10000,
+                dots: false
+            });
+        }
+   /* closed projects */
     
 
 });
