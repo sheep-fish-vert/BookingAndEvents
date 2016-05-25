@@ -3,11 +3,10 @@
 
 $(document).ready(function(){
 	$(".fancybox-form").fancybox({
-		padding: [20, 120, 40, 120],
-		
-		// fitTiVie: true,
-		// autoCenter: true,
-
+		//padding: [20, 120, 40, 120],
+		minHeight: 600,
+		fitToVie: true,
+		autoCenter: true,
 		helpers:{
 			overlay: {
 				css:{
