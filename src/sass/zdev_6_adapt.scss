@@ -97,6 +97,17 @@
 			}
 		}
 	}
+
+	.experience{ 
+		.experience-tabs {
+		 	.tab-content{ padding: 0px 0px 900px 0px;
+				.partners-table{
+					div{width: calc(100% / 3);
+					}
+				}
+			}	
+		}
+	}	
 }
 @media screen and (max-width: 666px){
 	.about-us{
@@ -160,6 +171,16 @@
 			}
 		}
 	}
+	.experience{ 
+		.experience-tabs { margin-top: -45px;
+		 	.tab-content{ padding: 0px 0px 900px 0px;
+				.partners-table{
+					div{width: calc(100% / 2);
+					}
+				}
+			}	
+		}
+	}	
 }
 @media screen and (max-width: 479px){
 	.about-us{

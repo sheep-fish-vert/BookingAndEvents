@@ -1,5 +1,14 @@
 
-
+function tabChangig(){
+	$('.exp-tab').on('click', function(){
+		$('.exp-tab').removeClass('active-tab');
+		$(this).addClass('active-tab');
+		var tabNum = $(this).data('tab');
+		console.log(tabNum);
+		$('.tab-content').hide();
+		var index = $('.tab-content').eq(tabNum-1).show();
+	})
+}
 
 $(document).ready(function(){
 	$(".fancybox-form").fancybox({
@@ -15,6 +24,7 @@ $(document).ready(function(){
 			}
 		}	
 	});
+	tabChangig();
 });
 
 $(window).load(function(){
