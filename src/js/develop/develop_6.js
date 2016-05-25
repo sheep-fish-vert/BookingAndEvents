@@ -3,12 +3,9 @@
 
 $(document).ready(function(){
 	$(".fancybox-form").fancybox({
-		padding: [20, 50, 40, 50],
-		width:1000,
-		height: 600,
-		autoSize: true,
-		autoResize: true,
-		fitTiVie: true,
+		//padding: [20, 120, 40, 120],
+		minHeight: 600,
+		fitToVie: true,
 		autoCenter: true,
 		helpers:{
 			overlay: {
