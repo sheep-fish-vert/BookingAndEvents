@@ -113,6 +113,7 @@ $(document).ready(function () {
             wall.fitWidth();
 
         }
+   
 
     /* plugin wall */
 
@@ -172,8 +173,11 @@ $(document).ready(function () {
         }
 
     /* fix name */
-    
-    waterfall('.tour-list');
+   
+   if ($('.main').find('.tour-list').length == 1) {
+        waterfall('.tour-list');
+   }
+   
     
 
 });
