@@ -1,5 +1,14 @@
 
-
+function tabChangig(){
+	$('.exp-tab').on('click', function(){
+		$('.exp-tab').removeClass('active-tab');
+		$(this).addClass('active-tab');
+		var tabNum = $(this).data('tab');
+		console.log(tabNum);
+		$('.tab-content').hide();
+		var index = $('.tab-content').eq(tabNum-1).show();
+	})
+}
 
 $(document).ready(function(){
 	
@@ -24,7 +33,11 @@ $(document).ready(function(){
 			}
 		}	
 	});
+<<<<<<< HEAD
 
+=======
+	tabChangig();
+>>>>>>> 378b9d3ec5defad45c333c43596be2568f634a25
 });
 
 $(window).load(function(){

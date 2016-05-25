@@ -1,3 +1,4 @@
+//about-us
 .about-us{background: url('../../images/about-us-background.jpg') no-repeat; background-size: cover; background-position: 50% 50%;	
 	.mbox{
 		h2{
@@ -18,7 +19,7 @@
 		}
 	}
 }
-
+//header
 header{ max-height: 155px; background: #2d2d2d;
 	.wrapper{width: 100%;
 		.mbox{display: flex; justify-content: space-between;
@@ -49,24 +50,32 @@ header{ max-height: 155px; background: #2d2d2d;
 .portfolio header .wrapper .mbox a:hover{color: #ffa900;}
 .portfolio_open header .wrapper .mbox a:hover{color: #ffa900;}
 
-
+//booking partners
 .booking_partners{
-	.partners-heading-wrapper{ padding: 20px 0;
-		.booking-partners-heading{ margin: 0 auto; text-transform: uppercase;width: 430px; padding: 10px 0;font-size: 48px; border-top: 5px solid #444444; border-bottom: 5px solid #444444; color: #444444;
+	.partners-heading-wrapper{ padding: 20px 0;text-align: center;
+		.booking-partners-heading{ margin: 0 auto; text-transform: uppercase; padding: 10px 0;font-size: 48px; border-top: 5px solid #444444; border-bottom: 5px solid #444444; color: #444444; display: inline-block;
 
 		}	
 	}
-	.partners-table{
-		tr{
-			td{border: 2px solid #e3e3e3; width: 320px; height: 150px; text-align: center; border-top: none; padding-left: 10px;padding-right: 10px;
-				img{
-					
-				}
+	.partners-table{width: 100%; display: flex; flex-wrap: wrap;
+		div{border: 2px solid #e3e3e3; width: calc(100% / 6); height: 150px; text-align: center; border-top: none; padding-left: 10px;padding-right: 10px;line-height: 100px; 
+			img{
+				
 			}
-		}
+		}	
 	}
+	// .partners-table{
+	// 	tr{
+	// 		td{border: 2px solid #e3e3e3; width: 320px; height: 150px; text-align: center; border-top: none; padding-left: 10px;padding-right: 10px;
+	// 			img{
+					
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
 
+// pop-up
 
 #call-popup{ width: 420px;  margin: 80px auto; max-width: 100%;padding: 10px;
 	.contact-form{
@@ -129,5 +138,31 @@ header{ max-height: 155px; background: #2d2d2d;
 	height: 600px!important;
 }
 
+//events experience tabs
 
+.experience{font-family: 'Helvetica';
+	.exp-heading{ width: 100%; text-align: center; background: url('../../images/experience-header-background.jpg') no-repeat; background-size: cover; position: 50% 50%; padding: 10px 0px 105px 0px;
+ 		h2{font-size: 64px;  font-weight: bold; font-family: 'Helvetica'; color: #e25585; text-align: center; margin: 30px 0px;}
+		span{font-size: 30px; color: #fff; display: inline-block;}
+	}
+	.experience-tabs{display: flex; position: relative ;margin-top: -30px; flex-wrap: wrap;
+		.tabs-nav{ width: 100%; display: flex; justify-content: center;
+			.exp-tab{ padding: 10px 15px; color: #fff; border-top-left-radius: 15px; border-top-right-radius: 15px; cursor: pointer; font-size: 16px; font-weight: bold;
+				p{margin: 0;}
+			}
+		}
+		.tab-content{ width: 100%;display: none; float:left; clear: both; background: url('../../images/exp-tab-content-background.jpg') no-repeat; background-size: cover; background-position: 50% 50%; padding: 0px 0px 600px 0px;
+			&:nth-child(2){display: block;}
+			.partners-table{width: 100%; display: flex; flex-wrap: wrap;
+				div{border: 2px solid #e3e3e3; width: calc(100% / 6); height: 150px; text-align: center; border-top: none; padding-left: 10px;padding-right: 10px;line-height: 100px; 
+					img{
+						
+					}
+				}	
+			}
+		}
+		.active-tab{ background: #fff; color: #797979!important;
+		}
+	}
+}
 

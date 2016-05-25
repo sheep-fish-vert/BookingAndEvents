@@ -97,6 +97,35 @@
 			}
 		}
 	}
+
+	.experience{ 
+		.experience-tabs {margin-top: -45px;
+			.tabs-nav{
+				.exp-tab{ text-align: center; 
+					p{
+						
+					}
+				}
+			}
+		 	.tab-content{ padding: 0px 0px 900px 0px;
+				.partners-table{
+					div{width: calc(100% / 3);
+					}
+				}
+			}	
+		}
+	}	
+	.booking_partners{
+		.partners-heading-wrapper{ 
+			.booking-partners-heading{ font-size: 38px; width: 340px;
+
+			}	
+		}
+		.partners-table{
+			div{width: calc(100% / 3);
+			}
+		}
+	}
 }
 @media screen and (max-width: 666px){
 	.about-us{
@@ -150,16 +179,25 @@
 
 			}	
 		}
-		.partners-table{
-			tr{
-				td{
-					img{
+		
+	}
+	.experience{ 
+		.experience-tabs { margin-top: -45px;
+			.tabs-nav{
+				.exp-tab{ padding: 10px 25px; text-align: center;  font-size: 14px; 
+					p{
 						
 					}
 				}
 			}
+		 	.tab-content{ padding: 0px 0px 1300px 0px;
+				.partners-table{
+					div{width: calc(100% / 2);
+					}
+				}
+			}	
 		}
-	}
+	}	
 }
 @media screen and (max-width: 479px){
 	.about-us{
