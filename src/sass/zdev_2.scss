@@ -447,12 +447,12 @@
                 li{max-width: none; margin-bottom: 0; display: block; 
                 
                     .item .conteiner-s {     height: 100%;
-                        &::before {  border-color: transparent transparent transparent rgba(142, 205, 246, 0.9); }
+                        &::before {  border-color: transparent transparent transparent rgba(142, 205, 246, 0.9); left: -100%; }
                         .image-block img {width: auto; max-width: none; transform: scale(1); transition: all 0.5s;}
                     }
                     
                     &:hover{
-                        .conteiner-s:before { bottom: 0; right: auto;}
+                        .conteiner-s:before { bottom: 0; right: auto;left: 0; transition: all 0.5s;}
                          .item .conteiner-s .image-block img { width: auto; transform: scale(1.2);}
                     }
                     .item .conteiner-s{
@@ -479,3 +479,12 @@
     }
 
 /* close project */
+
+
+/* top booking slider */
+    
+  .booking-top-wrap{background-image: url(../images/booking-top-bg.jpg);    background-position: center bottom; padding-bottom: 470px;
+  
+  }
+    
+/* top booking slider */
