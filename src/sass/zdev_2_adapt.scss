@@ -1,3 +1,7 @@
+@media screen and (max-width: 1840px){
+    .block-bad-items{max-width: 1370px; margin: 0 auto;}
+}
+
 @media screen and (max-width: 1780px){
     
     /* bad list */
@@ -45,6 +49,11 @@
     /* bad list */
 
 }
+
+@media screen and (max-width: 1390px){
+    .block-bad-items{max-width: 910px; margin: 0 auto;}
+}
+
 @media screen and (max-width: 1280px){
     /* top slid events */ 
         
@@ -120,6 +129,12 @@
     /* qestion */
 
 }
+
+@media screen and (max-width: 920px){
+    .block-bad-items{max-width: 455px; margin: 0 auto;}
+}
+
+
 @media screen and (max-width: 767px){
     .listener .upper-text{column-count: 1; column-gap: 0px; padding: 25px 0;}
     
@@ -190,8 +205,9 @@
     
 }
 @media screen and (max-width: 666px){
-
 }
+
+
 @media screen and (max-width: 479px){
     .listener{ 
         .adolist-1360{display: block;            
@@ -235,6 +251,7 @@
         }
         
     /* bad list */
+
 }
 @media screen and (max-width: 420px){
     .listener .convertation ul li .item .conteiner-s .hovered-block .shaped { width: 100%;height: 250px;}
