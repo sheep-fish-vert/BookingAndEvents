@@ -173,11 +173,33 @@ $(document).ready(function () {
         }
 
     /* fix name */
+    
+    /* fix title up */
+    
+        if($('.main').find('.agency-wrap').length == 1){
+            $('.agency-wrap').css('margin-top', -$('.agency-wrap .title').height() );
+        }
+    
+    /* fix title up*/
    
    if ($('.main').find('.tour-list').length == 1) {
         waterfall('.tour-list');
    }
    
+   /* agency */
+        if ($('.main').find('.agency').length == 1) {
+            $('.agency').slick({
+            // slidesToShow: 4,
+                centerMode: true,
+                variableWidth: true,
+                slidesToScroll: 1,
+                autoplay: true,
+                infinite: true,
+                autoplaySpeed: 10000,
+                dots: false
+            });
+        }
+   /* agency */
     
 
 });
@@ -202,14 +224,22 @@ $(window).resize(function () {
 
     /* fix name  band */
 
-    if ($('.main').find('.str-box').length == 1) {
-        if ($(window).width() > 1024) {
-            $('.about-block p:first').css('padding-top', $('.super-title').height() + 110);
-        } else {
-            $('.about-block p:first').css('padding-top', 0);
+        if ($('.main').find('.str-box').length == 1) {
+            if ($(window).width() > 1024) {
+                $('.about-block p:first').css('padding-top', $('.super-title').height() + 110);
+            } else {
+                $('.about-block p:first').css('padding-top', 0);
+            }
         }
-    }
 
     /* fix name */
+    
+    /* fix title up */
+    
+        if($('.main').find('.agency-wrap').length == 1){
+            $('.agency-wrap').css('margin-top', -$('.agency-wrap .title').height() );
+        }
+    
+    /* fix title up*/
 
 });
