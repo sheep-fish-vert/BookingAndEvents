@@ -43,5 +43,15 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
+     <script>
+        if(screen.width>640){
+            document.write('<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />');
+        }
+        else{
+            document.write('<meta name="viewport" content="width=640, user-scalable=false "/>');
+        }
+    </script>
 </head>
 <body>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/waterfall.js/1.0.2/waterfall.min.js"></script>
