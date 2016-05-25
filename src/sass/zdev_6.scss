@@ -28,7 +28,7 @@ header{ max-height: 155px; background: #2d2d2d;
 				}
 			}
 			nav{display: flex; justify-content: space-between; width: 800px; padding: 0px 140px 0px 180px; align-items: center;
-				a{display:block; padding: 0 20px; font-size: 14px; color: #fff; text-decoration: none; vertical-align: middle; transition: all 0.3s;
+				a{display:block; font-size: 14px; color: #fff; text-decoration: none; vertical-align: middle; transition: all 0.3s;
 					
 				}
 			}
@@ -52,7 +52,7 @@ header{ max-height: 155px; background: #2d2d2d;
 
 //booking partners
 .booking_partners{
-	.partners-heading-wrapper{ padding: 20px 0;text-align: center;
+	.partners-heading-wrapper{ padding: 0px 0px 40px 0px;text-align: center;
 		.booking-partners-heading{ margin: 0 auto; text-transform: uppercase; padding: 10px 0;font-size: 48px; border-top: 5px solid #444444; border-bottom: 5px solid #444444; color: #444444; display: inline-block;
 
 		}	
@@ -64,15 +64,7 @@ header{ max-height: 155px; background: #2d2d2d;
 			}
 		}	
 	}
-	// .partners-table{
-	// 	tr{
-	// 		td{border: 2px solid #e3e3e3; width: 320px; height: 150px; text-align: center; border-top: none; padding-left: 10px;padding-right: 10px;
-	// 			img{
-					
-	// 			}
-	// 		}
-	// 	}
-	// }
+	
 }
 
 // pop-up
@@ -80,7 +72,7 @@ header{ max-height: 155px; background: #2d2d2d;
 #call-popup{ width: 420px;  margin: 80px auto; max-width: 100%;padding: 10px;
 	.contact-form{
 		.contact-form-title{ text-align: center; text-transform: uppercase;
-			h5{font-size: 38px; font-weight: 30; 
+			h5{font-size: 38px; font-weight: bold; margin: 20px 0px;
 				
 			}
 		}
@@ -129,10 +121,12 @@ header{ max-height: 155px; background: #2d2d2d;
 }
 
 .fancybox-close{ background-image: url('../../images/popup-cross.png'); background-repeat: no-repeat; background-position: 50% 50%; top: 10px; right: 10px;
+	&:hover{;
+	}
 }
 	
 .fancybox-wrap{
-	width: 50%!important;
+	width: 40%!important;
 	min-width: 300px;
 	min-height: 600px;
 	height: 600px!important;
