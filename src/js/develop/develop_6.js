@@ -33,11 +33,9 @@ $(document).ready(function(){
 			}
 		}	
 	});
-<<<<<<< HEAD
 
-=======
 	tabChangig();
->>>>>>> 378b9d3ec5defad45c333c43596be2568f634a25
+
 });
 
 $(window).load(function(){
