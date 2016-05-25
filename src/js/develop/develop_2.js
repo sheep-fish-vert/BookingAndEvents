@@ -206,14 +206,23 @@ $(document).ready(function () {
     
         if ($('.main').find('.close-project-slider').length == 1) {
             $('.close-project-slider').slick({
-            // slidesToShow: 4,
+                 slidesToShow: 2,
                // centerMode: true,
-                variableWidth: true,
-                slidesToScroll: 1,
+               // variableWidth: true,
+                slidesToScroll: 2,
                 autoplay: true,
                 infinite: true,
                 autoplaySpeed: 10000,
-                dots: false
+                dots: false,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
         }
    /* closed projects */

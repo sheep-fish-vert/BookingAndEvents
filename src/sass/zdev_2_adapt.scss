@@ -61,18 +61,11 @@
         
         
     /* top slid events */ 
-    
-    
-    /* closed projects */
-    
-        .close-project-wrap .close-project-sl .convertation .close-project-slider li &:hover{
-                .conteiner-s:before { bottom: 0; right: 0;}
-            }
-    
-    /* closed projects */
+   
 
 }
 @media screen and (max-width: 1024px){
+    
 
     .listener{ 
         .upper-text{column-count: 2; column-gap: 20px;}
@@ -101,6 +94,14 @@
 
         
     /* top slid events */ 
+    
+    /* closed projects */
+    
+        .close-project-wrap .close-project-sl .convertation .close-project-slider li &:hover{
+                .conteiner-s:before { bottom: 0; right: auto;}
+            }
+    
+    /* closed projects */
     
 }
 @media screen and (max-width: 992px){
