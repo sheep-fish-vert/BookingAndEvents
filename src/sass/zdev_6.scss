@@ -106,8 +106,8 @@ header{ max-height: 155px; background: #2d2d2d;
 .fancybox-skin{max-height: 600px;
 
 	border-radius: 40px;
-	-webkit-box-shadow: 0 0 100px 800px rgba(0, 0, 0, 0.5)!important;
-	        box-shadow: 0 0 100px 800px rgba(0, 0, 0, 0.5)!important;
+	-webkit-box-shadow: 0 0 100px 1200px rgba(0, 0, 0, 0.5)!important;
+	        box-shadow: 0 0 100px 1200px rgba(0, 0, 0, 0.5)!important;
 	background: rgba(255, 255, 255, 0.3);
 }
 .errorText{
@@ -134,8 +134,7 @@ header{ max-height: 155px; background: #2d2d2d;
 .fancybox-wrap{
 	width: 40%!important;
 	min-width: 300px;
-	min-height: 600px;
-	height: 600px!important;
+	border-radius: 40px;
 }
 
 //events experience tabs
