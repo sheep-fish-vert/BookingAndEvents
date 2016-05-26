@@ -106,8 +106,8 @@ header{ max-height: 155px; background: #2d2d2d;
 .fancybox-skin{max-height: 600px;
 
 	border-radius: 40px;
-	-webkit-box-shadow: 0 0 100px 800px rgba(0, 0, 0, 0.5)!important;
-	        box-shadow: 0 0 100px 800px rgba(0, 0, 0, 0.5)!important;
+	-webkit-box-shadow: 0 0 100px 1200px rgba(0, 0, 0, 0.5)!important;
+	        box-shadow: 0 0 100px 1200px rgba(0, 0, 0, 0.5)!important;
 	background: rgba(255, 255, 255, 0.3);
 }
 .errorText{
@@ -116,22 +116,25 @@ header{ max-height: 155px; background: #2d2d2d;
 
 .error{
 	.form_input{ 
-			input{border: 3px solid red!important; box-shadow: none!important;}
+			input, textarea{border: 3px solid red!important; box-shadow: none!important;}
 		}
 }
 
-.fancybox-close{ background: transparent; background-repeat: no-repeat; background-position: 50% 50%; 
-	&:hover{;
+.fancybox-close{ background: transparent; background-repeat: no-repeat; background-position: 50% 50%; overflow: hidden; 
+	&:after{min-width: 25px; min-height: 5px; content: ''; background: #b7bcc3; display: block;transform: rotate(40deg);position: absolute; top: 20px;left: 10px;
 	}
-	&:after{width: 10px; height: 2px; background: #b7bcc3;}
-	&:before{width: 10px; height: 2px; background: #b7bcc3;}
+	&:before{min-width: 25px; min-height: 5px;  content: ''; background: #b7bcc3; display: block; transform: rotate(-40deg);position: absolute; top: 20px;left: 10px;
+	}
+	&:hover:after, &:hover:before{
+		background: #c3b7ba;
+	}
+	
 }
 	
 .fancybox-wrap{
 	width: 40%!important;
 	min-width: 300px;
-	min-height: 600px;
-	height: 600px!important;
+	border-radius: 40px;
 }
 
 //events experience tabs
