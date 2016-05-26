@@ -483,7 +483,60 @@
 
 /* top booking slider */
     
-  .booking-top-wrap{background-image: url(../images/booking-top-bg.jpg);    background-position: center bottom; padding-bottom: 470px;
+  .booking-top-wrap{background-image: url(../images/booking-top-bg.jpg);    background-position: center bottom; padding-bottom: 470px; background-repeat: no-repeat;
+    .convert-m{ position: relative; overflow: hidden;
+        .slider-bembi{
+            .slider-item{
+                .convert{position: relative;}
+                .beutifulli-shtock{ position: absolute; left: 0; right: 0; top: 0; height: 93px; overflow: hidden;
+                    &:before{content: ""; position: absolute; left: 10%; top: 0; width: 14px; height: 145px;  background-image: url(../images/shtock.jpg);}
+                    &:after{ content: ""; position: absolute; right: 10%; top: 0; width: 14px; height: 145px;  background-image: url(../images/shtock.jpg); transform: scale(-1, 1);}
+                }
+                .conteiner{padding-top: 93px; position: relative; z-index: 5; margin-bottom: 50px;                     
+                
+                    &:before{content: ''; position: absolute; bottom: 20px; left: 30px; right: 50px; height: 1px; z-index: 0; box-shadow: 10px 10px 50px 30px rgba(0,0,0,0.75); }
+                    &:after{content: ''; position: absolute; bottom: 20px; left: 50px; right: 30px; height: 1px; z-index: 0; box-shadow: -10px 10px 50px 30px rgba(0,0,0,0.35); }
+                    
+                    .cont{position: relative; z-index: 5;border-style: solid;
+                    border-width: 10px; box-shadow: 0 0 19px 0px black;
+                    -moz-border-image: url(../images/ramka.png) 10 10 10 10 stretch;
+                    -webkit-border-image: url(../images/ramka.png) 10 10 10 10 stretch;
+                    -o-border-image: url(../images/ramka.png) 10 10 10 10 stretch;
+                    border-image: url(../images/ramka.png) 10 10 10 10 fill stretch;}
+                }                
+            }
+            .slick-slide{ opacity: 0; transition: all 0.3s;}
+            .slick-current{opacity: 1;}
+            
+            .slick-arrow { width: 0; opacity: 0; visibility: hidden; right: 0; pointer-events: none;}
+            .slick-dots{
+                li{
+                    button{ padding: 0; width: 10px; height: 10px; border-radius: 50%; overflow: hidden; background-color: #8b8b8b; line-height: 1; font-size: 16px;
+                        &:before{display: none;}
+                    }
+                }
+                li.slick-active{
+                    button{ background-color: #83bce3; }
+                }
+                li:hover{
+                    button{ background-color: #a8d9fa; }
+                }   
+            }
+        }
+        .arrow-prew{position: absolute; top: 50%; padding-left: 40px; cursor: pointer; left: 0;
+                &:before{ position: absolute; content: ''; width: 21px; height: 21px; border-top: 2px solid black; border-left: 2px solid black; transform: rotate(-45deg); left: 10px; top: -3px; }
+                &:hover{ color: #83bce3;
+                    &:before{border-top: 2px solid #83bce3; border-left: 2px solid #83bce3; }
+                }
+            }
+            
+            .arrow-next{position: absolute; top: 50%; padding-right: 40px; cursor: pointer; right: 0; transition: all 0.3s; 
+                &:before{ position: absolute; content: ''; width: 21px; height: 21px; border-top: 2px solid black; border-left: 2px solid black; transform: rotate(135deg); right: 10px; top: -3px; transition: all 0.3s;  }
+                &:hover{ color: #83bce3;
+                    &:before{border-top: 2px solid #83bce3; border-left: 2px solid #83bce3; }
+                }
+            }
+    }
   
   }
     
