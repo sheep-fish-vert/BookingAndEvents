@@ -201,6 +201,24 @@ $(document).ready(function () {
         }
    /* agency */
    
+   /* booking top */
+        
+        if ($('.main').find('.slider-bembi').length == 1) {
+            $('.slider-bembi').slick({
+                //slidesToShow: 1,
+                //fade: true,
+                centerMode: true,
+                variableWidth: true,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+               // autoplay: true,
+                infinite: true,
+               // autoplaySpeed: 10000,
+                dots: true
+            });
+        }
+   /* booking top */
+   
    
     /* closed projects */
     
