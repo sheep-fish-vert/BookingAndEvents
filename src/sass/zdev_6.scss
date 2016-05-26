@@ -120,10 +120,10 @@ header{ max-height: 155px; background: #2d2d2d;
 		}
 }
 
-.fancybox-close{ background: transparent; background-repeat: no-repeat; background-position: 50% 50%; overflow: hidden; 
-	&:after{min-width: 25px; min-height: 5px; content: ''; background: #b7bcc3; display: block;transform: rotate(40deg);position: absolute; top: 20px;left: 10px;
+.fancybox-close{ background: transparent; background-repeat: no-repeat; background-position: 50% 50%; overflow: hidden; top: 5px; right: 15px;
+	&:after{min-width: 20px; min-height: 4px; content: ''; background: #b7bcc3; display: block;transform: rotate(45deg);position: absolute; top: 20px;left: 10px;
 	}
-	&:before{min-width: 25px; min-height: 5px;  content: ''; background: #b7bcc3; display: block; transform: rotate(-40deg);position: absolute; top: 20px;left: 10px;
+	&:before{min-width: 20px; min-height: 4px;  content: ''; background: #b7bcc3; display: block; transform: rotate(-45deg);position: absolute; top: 20px;left: 10px;
 	}
 	&:hover:after, &:hover:before{
 		background: #c3b7ba;
