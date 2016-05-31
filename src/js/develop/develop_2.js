@@ -113,7 +113,30 @@ $(document).ready(function () {
             wall.fitWidth();
 
         }
-   
+        
+
+        
+        if ($('.main').find('.artist-list').length == 1) {
+
+            var wall = new Freewall(".artist-list");
+            wall.reset({
+                selector: '.box',
+                animate: true,
+                cellW: 560,
+                cellH: 100,
+                draggable: true,
+                onResize: function () {
+                    wall.fitWidth();
+                },
+                onBlockMove: function () {
+                    wall.fitWidth();
+                }
+            });
+            wall.fitWidth();
+
+        }
+        
+
 
     /* plugin wall */
 
@@ -185,6 +208,9 @@ $(document).ready(function () {
     if ($('.main').find('.tour-list').length == 1) {
             waterfall('.tour-list');
     }
+   
+    
+    
    
    /* agency */
         if ($('.main').find('.agency').length == 1) {
