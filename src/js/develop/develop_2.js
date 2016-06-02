@@ -113,8 +113,72 @@ $(document).ready(function () {
             wall.fitWidth();
 
         }
-   
+        
+        
+        if ($('.main').find('.portfolio-conteiner').length == 1) {
 
+            var wall = new Freewall(".portfolio-conteiner");
+            var dna = $(".portfolio-conteiner .box ");
+            
+            /* setka */ 
+            
+                    
+                    
+                var dna11 = $(".portfolio-conteiner .size-1-1 ");
+                var dna12 = $(".portfolio-conteiner .size-1-2 ");
+                var dna13 = $(".portfolio-conteiner .size-1-3 ");
+                var dna14 = $(".portfolio-conteiner .size-1-4 ");
+                var dna21 = $(".portfolio-conteiner .size-2-1 ");
+                var dna22 = $(".portfolio-conteiner .size-2-2 ");
+                var dna23 = $(".portfolio-conteiner .size-2-3 ");
+                var dna24 = $(".portfolio-conteiner .size-2-4 ");
+                
+            /* setka*/
+            
+            wall.reset({
+                selector: '.box',
+                animate: true,
+                cellW: 420,
+                cellH: 430,
+                //draggable: true,
+                onResize: function () {
+                    
+                    if($(window).width() < 992 ){
+                        
+                        wall.fixSize({
+                            block: dna,
+                            width: 420,
+                            height: 430
+                        });
+                    } else{
+                        
+                        wall.fixSize({ block: dna11, width: 420, height: 420 });                        
+                        wall.fixSize({ block: dna12, width: 420, height: 840 });                        
+                        wall.fixSize({ block: dna13, width: 420, height: 1260 });
+                        wall.fixSize({ block: dna14, width: 420, height: 1680 });
+                        
+                        wall.fixSize({ block: dna21, width: 840, height: 420 });                        
+                        wall.fixSize({ block: dna22, width: 840, height: 840 });                        
+                        wall.fixSize({ block: dna23, width: 840, height: 1260 });
+                        wall.fixSize({ block: dna24, width: 840, height: 1680 });
+                        
+                    }
+                    
+                    wall.fitWidth();
+                },
+                onBlockMove: function () {
+                    wall.fitWidth();
+                }
+            });
+            wall.fitWidth();
+
+        }
+     
+
+if ($('.main').find('.artist-list').length == 1) {
+            waterfall('.artist-list');
+    }
+  
     /* plugin wall */
 
 
@@ -186,6 +250,9 @@ $(document).ready(function () {
             waterfall('.tour-list');
     }
    
+    
+    
+   
    /* agency */
         if ($('.main').find('.agency').length == 1) {
             $('.agency').slick({
@@ -253,8 +320,17 @@ $(window).load(function () {
 });
 
 $(window).resize(function () {
-
-    
+/*
+    if($(window).width() < 992 ){
+        var dna = $(".portfolio-conteiner .box ");
+        wall.unsetFilter();
+        wall.fixSize({
+            block: dna,
+            width: 440,
+            height: 440
+        });
+    }
+   */ 
     /* map */
         if ($('.main').find('#mapper').length == 1) {
             if ($(window).width() < 768) {

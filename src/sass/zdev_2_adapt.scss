@@ -8,12 +8,20 @@
         .listener{
             .convertation ul.portfolio-conteiner{  max-width: 1320px; margin: 0 auto; padding: 0;
             
-                li.box { width: 440px; height: 440px;}
+                li.box {}
                 
                 
             }
         }
     /* bad list */
+    
+    
+}
+
+@media screen and (max-width: 1720px){
+
+    .listener .convertation .artist-list { width: 1160px; max-width: 1160px; margin: 0 auto}
+    
 }
 
 
@@ -31,18 +39,12 @@
     /* top slid events */ 
 }
 @media screen and (max-width: 1366px){
-    .listener{ 
-        .adolist-1360{display: block;
-            .artist-list{width: 40%; float: left; margin: 0 5%;}
-        }
-        .adolist-1920{display: none;}
-    }
     
     /* bad list */
         .listener{
             .convertation ul.portfolio-conteiner{  max-width: 880px; margin: 0 auto; padding: 0;
             
-                li.box { width: 440px; height: 440px;}              
+                li.box { }              
                 
             }
         }
@@ -63,6 +65,13 @@
    
 
 }
+
+@media screen and (max-width: 1200px){
+
+    .listener .convertation .artist-list { width: 600px; margin: 0 auto}
+    
+}
+
 @media screen and (max-width: 1024px){
     
 
@@ -122,7 +131,7 @@
         .listener{
             .convertation ul.portfolio-conteiner{  max-width: 440px; margin: 0 auto; padding: 0;
             
-                li.box { width: 440px; height: 440px;}              
+                li.box { }              
                 
             }
         }
