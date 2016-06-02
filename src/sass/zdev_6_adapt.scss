@@ -37,7 +37,13 @@
 	.fancybox-wrap{
 	width: 75%!important;
 	min-width: 300px;
-	
+	}
+	.about-us{
+		.mbox{
+			.upper-text{column-count: 2;
+				
+			}
+		}
 	}
 }
 @media screen and (max-width: 992px){
@@ -76,7 +82,7 @@
 					img{}
 				}
 			}
-			.about-us-text{padding-bottom: 500px;
+			.about-us-text{padding-bottom: 500px;column-count: 1;
 				p{ 
 					
 				}
@@ -148,7 +154,7 @@
 					img{}
 				}
 			}
-			.about-us-text{padding-bottom: 600px;column-count: 1;
+			.about-us-text{padding-bottom: 600px;
 				p{ 
 					
 				}
