@@ -2,11 +2,11 @@
 
 .booking{
     .title{ text-align: center; padding: 20px 15px;
-        h2{ font-size: 48px; display: inline-block; font-family: "Helvetica", sans-serif; color: rgb(68, 68, 68); padding: 8px 0 0px; font-weight: bold; text-transform: uppercase; line-height: 48px;  border-top: 5px solid #444444; border-bottom: 5px solid #444444; margin: 0;}
+        h2{ font-size: 48px; display: inline-block; font-family: "Helvetica1", sans-serif; color: rgb(68, 68, 68); padding: 8px 0 0px; font-weight: bold; text-transform: uppercase; line-height: 48px;  border-top: 5px solid #444444; border-bottom: 5px solid #444444; margin: 0;}
     }
 }
 
-.upper-text{column-count: 3; column-gap: 60px; padding: 55px 0; font-family: 'Helvetica', sans-serif; font-weight: 400; font-size: 14px; line-height: 1.2; color: rgb(110, 110, 110);}
+.upper-text{column-count: 3; column-gap: 60px; padding: 55px 0; font-family: 'Helvetica1', sans-serif; font-weight: 400; font-size: 14px; line-height: 1.2; color: rgb(110, 110, 110);}
 
 
 /* super- puper */
@@ -40,6 +40,7 @@
                 
                     .item .conteiner-s {     height: 100%;
                         .image-block img {width: auto; max-width: none; transform: scale(1); transition: all 0.5s;}
+                       
                     }
                     &:hover{ 
                         .item .conteiner-s .image-block img { width: auto; transform: scale(1.2);}
@@ -47,11 +48,11 @@
                     .item{ position: relative;  height: 100%;
                         .conteiner-s{overflow: hidden; position: relative; 
                             .image-block{width: 100%;
-                                img{width: 100%; height: auto;}
+                                img{ height: auto;}
                             }
                             .hovered-block{position: absolute;  bottom: -95px;z-index: 10; left: 0; height: 320px; right: 0; width: 100%; text-align: justify; padding: 0 30px 30px ;transition: all 0.5s;
-                                .name-band{ padding-top: 170px; font-size: 18px; font-family: "Helvetica", sans-serif; color: rgb(255, 255, 255); font-weight: bold; line-height: 1.2; }
-                                .subtext{ font-size: 14px; font-family: "Helvetica", sans-serif; color: rgb(67, 67, 67); display: block; height: 70px; opacity: 0; transition: all 0.5s;}
+                                .name-band{ padding-top: 170px; font-size: 18px; font-family: "Helvetica1", sans-serif; color: rgb(255, 255, 255); font-weight: bold; line-height: 1.2; }
+                                p{ font-size: 14px; font-family: "Helvetica1", sans-serif; color: rgb(67, 67, 67); display: block; height: 70px; opacity: 0; transition: all 0.6s; transform: translateX(-100%);}
                                 .shaped { width:100%; height: 100%; float: right; shape-outside: polygon(0 0, 100% 0%, 100% 100%, 100% 100%); shape-margin: 20px;}
 
                             }
@@ -63,7 +64,7 @@
                         .conteiner-s{
                             .hovered-block{ bottom: 0px;
                                 .name-band{ }
-                                .subtext{opacity: 1;}
+                                p{opacity: 1; transform: translateX(0);} 
                             }
                         }
                     }
@@ -112,7 +113,7 @@
 
 /* titles */
     .title-text{ position: relative; text-align: center;
-        h2{color: rgb(238, 174, 49); font-size: 72px; font-family: "Helvetica", sans-serif; font-weight: bold; text-transform: uppercase; margin: 0; padding: 35px 0;}
+        h2{color: rgb(238, 174, 49); font-size: 72px; font-family: "Helvetica1", sans-serif; font-weight: bold; text-transform: uppercase; margin: 0; padding: 35px 0;}
         .soc-block{position: absolute; right: 0; width: 30px; top: 0; bottom: 0;
             a{text-decoration: none; display: block; position: absolute; border-radius: 50%; overflow: hidden; transition: all 0.3s; width: 30px; height: 30px; 
                 &:hover{background-color: orange;}
@@ -128,7 +129,7 @@
 /* button */
 
     button{width: 100%; height: 53px; background-color: #eeae31; border-radius: 18px; border: none; outline: none; transition: all 0.5s;
-        span{ text-transform: uppercase; font-weight: 500; font-size: 14px; font-family: "Helvetica", sans-serif;  color: rgb(7, 7, 7); line-height: 1.2;  }
+        span{ text-transform: uppercase; font-weight: 500; font-size: 14px; font-family: "Helvetica1", sans-serif;  color: rgb(7, 7, 7); line-height: 1.2;  }
         &:hover{background-color: #DA9716;}
     }            
 
@@ -139,7 +140,7 @@
     .contact-us{ background-image: url(../images/about-bg.jpg); background-position: bottom; background-repeat: no-repeat; padding-bottom: 370px;
         .text-list{ padding-bottom: 40px;
             ul{list-style: none;}
-            li{ text-align: center;  font-size: 18px; font-family: "Helvetica", sans-serif; color: rgb(55, 55, 55); line-height: 1.2; padding: 10px 0;
+            li{ text-align: center;  font-size: 18px; font-family: "Helvetica1", sans-serif; color: rgb(55, 55, 55); line-height: 1.2; padding: 10px 0;
                 b{ font-weight: 700;}
                 span, a{display: inline; text-decoration: none; color: rgb(55, 55, 55); transition: all 0.3s;}
                 a:hover{color: #ffa900; }
@@ -153,7 +154,7 @@
                         &:nth-child(2){float: right;}                    
                     }
                 }
-                textarea, input{ width: 100%; height: 52px; border: 1px solid #e2e2e2; background-color: transparent; border-radius: 18px; padding-left: 30px;  font-size: 14px;   font-family: "Helvetica", sans-serif;  color: rgb(167, 167, 167); font-weight: 300;  line-height: 1.2;
+                textarea, input{ width: 100%; height: 52px; border: 1px solid #e2e2e2; background-color: transparent; border-radius: 18px; padding-left: 30px;  font-size: 14px;   font-family: "Helvetica1", sans-serif;  color: rgb(167, 167, 167); font-weight: 300;  line-height: 1.2;
                     &.error{border-color: red;
                         &::-webkit-input-placeholder {color: red; }
                         &:-moz-placeholder {color: red; opacity:1;}
@@ -181,7 +182,7 @@
     
     .pagi-wrap{
         .top-pagi{ display: flex; align-items: center; justify-content: space-between; height: 100px;
-            a{text-decoration: none; position: relative; font-size: 16px; font-family: "Helvetica", sans-serif; color: rgb(41, 41, 41);  line-height: 1.2; font-weight: 400; transition: all 0.3s;
+            a{text-decoration: none; position: relative; font-size: 16px; font-family: "Helvetica1", sans-serif; color: rgb(41, 41, 41);  line-height: 1.2; font-weight: 400; transition: all 0.3s;
                 &:before{content: ''; position: absolute; transition: all 0.3s;}
                 &:hover{ color: #ffa900;
                     &:before{border-top: 1px solid #ffa900; border-left: 1px solid #ffa900; }
@@ -212,13 +213,13 @@
     
     .convert-qestion { padding: 110px 0 100px;    
         .title-q { 
-            h2{font-size: 72px; font-family: "Helvetica", sans-serif; color: rgb(255, 255, 255); text-transform: uppercase;  line-height: 1.2; font-weight: 900; text-align: center; margin: 0;}
+            h2{font-size: 72px; font-family: "Helvetica1", sans-serif; color: rgb(255, 255, 255); text-transform: uppercase;  line-height: 1.2; font-weight: 900; text-align: center; margin: 0;}
         }
         .sub-q{ padding-bottom: 40px;
-            p{ font-size: 30px; font-family: "Helvetica", sans-serif; color: rgb(255, 255, 255); line-height: 1.2; margin: 0; text-align: center;}
+            p{ font-size: 30px; font-family: "Helvetica1", sans-serif; color: rgb(255, 255, 255); line-height: 1.2; margin: 0; text-align: center;}
         }
         .butt{
-            .button{max-width: 480px; margin: 0 auto; height: 62px; border-radius: 31px;  text-decoration: none; display: flex; justify-content: center; align-items: center; color: white; font-size: 16px;  font-family: "Helvetica", sans-serif; text-transform: uppercase; font-weight: 500;line-height: 1.2; transition: all 0.5s;
+            .button{max-width: 480px; margin: 0 auto; height: 62px; border-radius: 31px;  text-decoration: none; display: flex; justify-content: center; align-items: center; color: white; font-size: 16px;  font-family: "Helvetica1", sans-serif; text-transform: uppercase; font-weight: 500;line-height: 1.2; transition: all 0.5s;
                 &:hover{background-color: white; }
             }
         }
@@ -251,19 +252,19 @@
 /* clients */ 
     .conteiner-cli{ margin-top: - 20px; padding-bottom: 70px;
         .title-cli{ text-align: center;
-            h2{margin: 0; font-size: 65px; font-weight: 900; font-family: "Helvetica", sans-serif;   color: rgb(226, 85, 133); text-transform: uppercase;  line-height: 1.2;}
+            h2{margin: 0; font-size: 65px; font-weight: 900; font-family: "Helvetica1", sans-serif;   color: rgb(226, 85, 133); text-transform: uppercase;  line-height: 1.2;}
         }  
         .slider-block{position: relative; width: 100%; overflow: hidden; padding: 0 70px;
             .cont-slid{min-height: 450px;}
-            .item{ ;
+            .item{
                 .conteiner{max-width: 320px; padding-bottom: 30px; margin: 0 auto;}
                 .top-face{  width: 100%; 
                     .cont{ margin: 0 auto; border-radius: 50%; width: 260px; height: 260px; overflow: hidden; position: relative; transition: all 0.5s;
                         img{position: absolute; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%); max-width: none;}
                     }
                 }
-                .name{ padding-top: 28px; font-size: 24px; font-family: "Helvetica", sans-serif;   color: rgb(44, 44, 44); font-weight: bold; text-align: center;}
-                .text{ padding-top: 28px; font-size: 14px; font-family: "Helvetica", sans-serif;   color: rgb(110, 110, 110); line-height: 1.2; text-align: center;}
+                .name{ padding-top: 28px; font-size: 24px; font-family: "Helvetica1", sans-serif;   color: rgb(44, 44, 44); font-weight: bold; text-align: center;}
+                .text{ padding-top: 28px; font-size: 14px; font-family: "Helvetica1", sans-serif;   color: rgb(110, 110, 110); line-height: 1.2; text-align: center;}
             }
             
             .slick-slide{ padding-top: 60px; opacity: 0; transition: all 0.3s;
@@ -329,7 +330,7 @@
             .inst{ background-color: #517fa6; padding: 7px 0;}
             
         }
-        .about-block{ font-size: 16px; font-family: "Helvetica", sans-serif; color: rgb(132, 132, 132); line-height: 1.2; text-align: left; display: inline-block; font-weight: 400;
+        .about-block{ font-size: 16px; font-family: "Helvetica1", sans-serif; color: rgb(132, 132, 132); line-height: 1.2; text-align: left; display: inline-block; font-weight: 400;
             p:nth-child(2){ padding-top: 290px;}
         }
         
@@ -337,7 +338,7 @@
         
             .soc-in-title{display: none;}
             
-            h2{ font-size: 150px; font-family: "Helvetica", sans-serif; color: rgb(226, 85, 133);   line-height: 1.2; text-align: right; font-weight: 900; margin: 0;}
+            h2{ font-size: 150px; font-family: "Helvetica1", sans-serif; color: rgb(226, 85, 133);   line-height: 1.2; text-align: right; font-weight: 900; margin: 0;}
         }
         .arrows{ position: absolute; top: 0; right: 0; width: 155px;
             a{display: inline-block; text-decoration: none; color: black;}
@@ -396,8 +397,8 @@
     .agency-wrap{
         .conteiner{
             .title{
-                h2{margin: 0; font-size: 100px; font-family: "Helvetica", sans-serif; color: rgb(226, 85, 133); font-weight: bold; text-transform: uppercase; line-height: 1.2; }
-                p{margin: 0; font-weight: 500; font-size: 24px; font-family: "Helvetica", sans-serif;   color: rgb(255, 255, 255); line-height: 1.2; padding-bottom: 30px;}
+                h2{margin: 0; font-size: 100px; font-family: "Helvetica1", sans-serif; color: rgb(226, 85, 133); font-weight: bold; text-transform: uppercase; line-height: 1.2; }
+                p{margin: 0; font-weight: 500; font-size: 24px; font-family: "Helvetica1", sans-serif;   color: rgb(255, 255, 255); line-height: 1.2; padding-bottom: 30px;}
             }
             
             ul{ list-style: none; padding: 0; margin: 0; width: 480px;
@@ -405,23 +406,26 @@
                     .item{ position: relative;
                         .conteiner-s{overflow: hidden; position: relative; 
                             .image-block{width: 100%;
-                                img{width: 100%; height: auto;}
+                                img{transform: scale(1); height: auto; transition: all 0.3s;}
                             }
                             .hovered-block{position: absolute;  bottom: -95px;z-index: 10; left: 0; height: 320px; right: 0; width: 100%; text-align: justify; padding: 0 30px 30px ;transition: all 0.5s;
-                                .name-band{ padding-top: 170px; font-size: 18px; font-family: "Helvetica", sans-serif; color: rgb(255, 255, 255); font-weight: bold; line-height: 1.2; }
-                                .subtext{ font-size: 14px; font-family: "Helvetica", sans-serif; color: rgb(67, 67, 67); display: block; height: 70px; opacity: 0; transition: all 0.5s;}
+                                .name-band{ padding-top: 170px; font-size: 18px; font-family: "Helvetica1", sans-serif; color: rgb(255, 255, 255); font-weight: bold; line-height: 1.2; }
+                                p{ font-size: 14px; font-family: "Helvetica1", sans-serif; color: rgb(67, 67, 67); display: block; height: 70px; opacity: 0; transition: all 0.5s; transform: translateX(-100%);}
                                 .shaped { width:100%; height: 100%; float: right; shape-outside: polygon(0 0, 100% 0%, 100% 100%, 100% 100%); shape-margin: 20px;}
 
                             }
                             &:before{content: ''; position: absolute; bottom: -100%; z-index: 10;  right: 100%; width: 0; height: 0; border-style: solid; border-width: 400px 0 0 560px; border-color: transparent transparent transparent rgba(226, 85, 133, 0.9); opacity: 0; transition: all 0.5s;}
                         }
-                    }
-                    &:hover{
-                        .conteiner-s:before{ bottom: 0; right: 0; opacity: 1;}
-                        .conteiner-s{
-                            .hovered-block{ bottom: 0px;
-                                .name-band{ }
-                                .subtext{opacity: 1;}
+                        &:hover{
+                            .conteiner-s:before{ bottom: 0; right: 0; opacity: 1;}
+                            .conteiner-s{
+                                .image-block{
+                                    img{transform: scale(1.2);}
+                                }
+                                .hovered-block{ bottom: 0px;
+                                    .name-band{ }
+                                    p{opacity: 1; transform: translateX(0);} 
+                                }
                             }
                         }
                     }
@@ -453,7 +457,7 @@
         .close-project-sl{
             .convertation {padding: 0;}
             .close-project-slider{ list-style: none; padding: 0;
-                li{max-width: none; margin-bottom: 0; display: block; 
+                li{max-width: none; margin-bottom: 0; display: block; padding: 0;
                 
                     .item .conteiner-s {     height: 100%;
                         &::before {  border-color: transparent transparent transparent rgba(142, 205, 246, 0.9); left: -100%; }

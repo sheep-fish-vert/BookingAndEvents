@@ -259,10 +259,10 @@ if ($('.main').find('.artist-list').length == 1) {
             // slidesToShow: 4,
                 centerMode: true,
                 variableWidth: true,
-                slidesToScroll: 1,
-                autoplay: true,
+             //   slidesToScroll: 1,
+              //  autoplay: true,
                 infinite: true,
-                autoplaySpeed: 10000,
+             //   autoplaySpeed: 2000,
                 dots: false
             });
         }
