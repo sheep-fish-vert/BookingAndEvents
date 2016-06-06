@@ -102,7 +102,7 @@ $(document).ready(function () {
                 animate: true,
                 cellW: 256,
                 cellH: 256,
-                draggable: true,
+               // draggable: true,
                 onResize: function () {
                     wall.fitWidth();
                 },

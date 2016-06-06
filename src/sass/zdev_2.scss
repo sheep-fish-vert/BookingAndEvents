@@ -2,7 +2,7 @@
 
 .booking{
     .title{ text-align: center; padding: 20px 15px;
-        h2{ font-size: 48px; display: inline-block; font-family: "Helvetica1", sans-serif; color: rgb(68, 68, 68); padding: 8px 0 0px; font-weight: bold; text-transform: uppercase; line-height: 48px;  border-top: 5px solid #444444; border-bottom: 5px solid #444444; margin: 0;}
+        h2{ font-size: 48px; display: inline-block; font-family: "Helvetica1", sans-serif; color: rgb(68, 68, 68); padding: 8px 0 0px; font-weight: bold; text-transform: uppercase; line-height: 48px;  border-top: 5px solid #444444; border-bottom: 5px solid #444444; margin: 0; letter-spacing: 7px;}
     }
 }
 
@@ -39,7 +39,7 @@
                     
                 
                     .item .conteiner-s {     height: 100%;
-                        .image-block img {width: auto; max-width: none; transform: scale(1); transition: all 0.5s;}
+                        .image-block img {width: auto; max-width: none; transform: scale(1); transition: all 3s !important;}
                        
                     }
                     &:hover{ 
@@ -114,7 +114,7 @@
 /* titles */
     .title-text{ position: relative; text-align: center;
         h2{color: rgb(238, 174, 49); font-size: 72px; font-family: "Helvetica1", sans-serif; font-weight: bold; text-transform: uppercase; margin: 0; padding: 35px 0;}
-        .soc-block{position: absolute; right: 0; width: 30px; top: 0; bottom: 0;
+        .soc-block{position: absolute; right: 0; width: 30px; top: -5px; bottom: 0;
             a{text-decoration: none; display: block; position: absolute; border-radius: 50%; overflow: hidden; transition: all 0.3s; width: 30px; height: 30px; text-align: center; padding: 5px 0;
                 svg{width: 20px;
                     path{fill: white;}
@@ -157,7 +157,7 @@
                         &:nth-child(2){float: right;}                    
                     }
                 }
-                textarea, input{ width: 100%; height: 52px; border: 1px solid #e2e2e2; background-color: transparent; border-radius: 18px; padding-left: 30px;  font-size: 14px;   font-family: "Helvetica1", sans-serif;  color: black; font-weight: 500; line-height: 1.2;
+                textarea, input{ width: 100%; height: 52px; border: 1px solid #595959; background-color: transparent; border-radius: 18px; padding-left: 30px;  font-size: 14px;   font-family: "Helvetica1", sans-serif;  color: black; font-weight: 500; line-height: 1.2;
                     &.error{border-color: red;
                         &::-webkit-input-placeholder {color: red;  }
                         &:-moz-placeholder {color: red; opacity:1;}
@@ -271,7 +271,7 @@
                 .text{ padding-top: 28px; font-size: 14px; font-family: "Helvetica1", sans-serif;   color: rgb(110, 110, 110); line-height: 1.2; text-align: center;}
             }
             
-            .slick-slide{ padding-top: 60px; opacity: 0; transition: all 0.3s;
+            .slick-slide{ padding-top: 30px; opacity: 0; transition: all 0.3s;
                 .top-face .cont{ width: 200px; height: 200px;  }
                 .name{opacity: 0;}
                 .text{opacity: 0;}
@@ -288,14 +288,14 @@
             }
             .slick-prev{width: 0px; height: 0px; visibility: hidden; opacity: 0; pointer-events: none;}
             
-            .arrow-prew{position: absolute; top: 50%; padding-left: 40px; cursor: pointer; left: 0;
+            .arrow-prew{position: absolute; top: 25%; padding-left: 40px; cursor: pointer; left: 0;
                 &:before{ position: absolute; content: ''; width: 21px; height: 21px; border-top: 2px solid black; border-left: 2px solid black; transform: rotate(-45deg); left: 10px; top: -3px; }
                 &:hover{ color: #e25585;
                     &:before{border-top: 2px solid #e25585; border-left: 2px solid #e25585; }
                 }
             }
             
-            .arrow-next{position: absolute; top: 50%; padding-right: 40px; cursor: pointer; right: 0; transition: all 0.3s; 
+            .arrow-next{position: absolute; top: 25%; padding-right: 40px; cursor: pointer; right: 0; transition: all 0.3s; 
                 &:before{ position: absolute; content: ''; width: 21px; height: 21px; border-top: 2px solid black; border-left: 2px solid black; transform: rotate(135deg); right: 10px; top: -3px; transition: all 0.3s;  }
                 &:hover{ color: #e25585;
                     &:before{border-top: 2px solid #e25585; border-left: 2px solid #e25585; }
@@ -303,7 +303,7 @@
             }
             
             .slick-dots{
-                li {
+                li { width: 10px; height: 10px;
                     button:before {content: ''; width: 10px; height: 10px; background-color: #8b8b8b; border-radius: 50%; opacity: 1; transition: all 0.3;}
                     &:hover{
                         button:before { background-color: #d5527b;  opacity: 0.5;}
@@ -441,15 +441,15 @@
             
             .agency{
                 
-                button{font-size: 16px; z-index: 100; top: 0; bottom: 0; width: 100px; height: 100%; background-color: red; border-radius: 0;  transform: translate(0, 0); 
+                button{font-size: 16px; z-index: 100; top: 0; bottom: 0; width: calc((100% - 3 * 480px)/2); height: 100%; background-color: transparent; border-radius: 0;  transform: translate(0, 0); 
                     &:before{ position: absolute; content: ''; width: 30px; height: 30px; border-top: 4px solid white; border-left: 4px solid white;  transform: rotate(-45deg); left: 20px; top: calc(50% - 14px); opacity: 1; transition: all 0.3s;}
-                    &:hover{
+                    &:hover{ background-color: rgba(255,255,255,0);
                          &:before{ border-color: rgb(226, 85, 133);}
                     }
                 }
                 .slick-prev{left: 0px;}
                 .slick-next{right: 0px;
-                    &:before{transform: rotate(135deg);}
+                    &:before{transform: rotate(135deg); left: auto; right: 20px;}
                 }
                 
             }
@@ -503,7 +503,23 @@
 
 /* top booking slider */
     
-  .booking-top-wrap{background-image: url(../images/booking-top-bg.jpg);    background-position: center bottom; padding-bottom: 470px; background-repeat: no-repeat;
+  .booking-top-wrap{background-image: url(../images/booking-top-bg.jpg);    background-position: center bottom; padding-bottom: 470px; background-repeat: no-repeat; 
+    .mbox{position: relative;
+        .soc-block-m{ position: absolute; top: 30px; width: 70px; left: calc(50% - 35px);z-index: 20;
+            .soc-block{width: 100%; top: 0; bottom: 0; display: flex; align-items: center; justify-content: space-between;
+                a{text-decoration: none; display: block; border-radius: 50%; overflow: hidden; transition: all 0.3s; width: 30px; height: 30px; text-align: center; padding: 5px 0;
+                    svg{width: 20px;
+                        path{fill: white;}
+                    }
+                    .st0{fill: white;}
+                    
+                    &:hover{background-color: orange;}
+                }
+                .fb{top: 35px; background-color: #3a589b;}
+                .inst{bottom: 35px; background-color: #517fa6; }
+            }
+        }
+    }
     .convert-m{ position: relative; overflow: hidden;
         .slider-bembi{
             .slider-item{
@@ -517,12 +533,13 @@
                     &:before{content: ''; position: absolute; bottom: 20px; left: 30px; right: 50px; height: 1px; z-index: 0; box-shadow: 10px 10px 50px 30px rgba(0,0,0,0.75); }
                     &:after{content: ''; position: absolute; bottom: 20px; left: 50px; right: 30px; height: 1px; z-index: 0; box-shadow: -10px 10px 50px 30px rgba(0,0,0,0.35); }
                     
-                    .cont{position: relative; z-index: 5;border-style: solid;
-                    border-width: 10px; box-shadow: 0 0 19px 0px black;
+                    .cont{position: relative; z-index: 5;border-style: solid; box-shadow: 0 0 19px 0px black, inset 0px 0px 10px 3px rgba(0,0,0,0.75);
+                    border-width: 16px; 
                     -moz-border-image: url(../images/ramka.png) 10 10 10 10 stretch;
                     -webkit-border-image: url(../images/ramka.png) 10 10 10 10 stretch;
                     -o-border-image: url(../images/ramka.png) 10 10 10 10 stretch;
-                    border-image: url(../images/ramka.png) 10 10 10 10 fill stretch;}
+                    border-image: url(../images/ramka.png) 10 10 10 10 fill stretch;
+                    }
                 }                
             }
             .slick-slide{ opacity: 0; transition: all 0.3s;}
@@ -530,7 +547,7 @@
             
             .slick-arrow { width: 0; opacity: 0; visibility: hidden; right: 0; pointer-events: none;}
             .slick-dots{
-                li{
+                li{ width: 10px; height: 10px;
                     button{ padding: 0; width: 10px; height: 10px; border-radius: 50%; overflow: hidden; background-color: #8b8b8b; line-height: 1; font-size: 16px;
                         &:before{display: none;}
                     }

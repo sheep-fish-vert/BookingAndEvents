@@ -34,6 +34,12 @@
         
     /* top slid events */ 
 }
+
+@media screen and (max-width: 1540px){
+    .agency-wrap .conteiner .agency button {width: calc((100% -  480px)/2);}
+}
+
+
 @media screen and (max-width: 1366px){
     
     /* bad list */
@@ -150,7 +156,7 @@
     .listener .convertation ul li .item .conteiner-s:before { bottom: 0 !important; right: 0 !important; opacity: 1 !important;}
     .close-project-sl .listener .convertation ul li .item .conteiner-s:before { bottom: 0 !important; right: 0 !important; left: 0 !important; opacity: 1 !important;}
     .listener .convertation ul li .item .conteiner-s .hovered-block {bottom: 0;}
-    .listener .convertation ul li .item .conteiner-s .hovered-block .subtext {opacity: 1;}
+    .listener .convertation ul li .item .conteiner-s .hovered-block .subtext {opacity: 1; transform: translateX(0) !important;}
 }
 
 
