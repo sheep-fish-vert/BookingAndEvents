@@ -44,15 +44,16 @@
                     $('.part-circle').each(function(){
 
                         var textItem = $(this).find('.part-circle-text');
-                        var titleTop = $(this).find('p span').position().top;
-                        console.log($(this).height());
+                        var titleTop = $(this).find('p').position().top;
+                        
                         var valueTop = 50 - ((titleTop*100)/$(this).height());
                         textItem.css({'top':valueTop+'%'});
+                        
+                        console.log(valueTop);
 
                     });
 
                 }, 1000);
-
             }
 
         /* /index page circle height */
