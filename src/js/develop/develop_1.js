@@ -150,7 +150,7 @@ $(window).load(function(){
 
         setTimeout(function(){
             $('.index-page').addClass('loaded');
-        }, 1000)
+        }, 100)
 
     /* /prety show for index-page */
 
