@@ -21,9 +21,10 @@
 }
 //header
 header{ max-height: 155px; background: #2d2d2d;
-	.wrapper{width: 100%;
-		.mbox{display: flex; justify-content: space-between;
-			a{padding: 30px 0 40px 0; display: block;	 
+	.wrapper{width: 100%; background-image: url(../images/head-bg.jpg); background-size: cover; 
+		.mbox{display: flex; justify-content: space-between; padding-bottom: 40px; padding-top: 30px;
+			
+			a{display: block;	 
 				img{max-width: none;
 				}
 			}
