@@ -1,4 +1,11 @@
 /* plugin */
+
+/* sdfgsdfg */
+    /*! CSS3-Perspective-Carousel 2.1.0 | (c) 2015 Pedro Rogério | MIT License */
+    !function(a,b){"function"==typeof define&&define.amd?define(function(){return b(a)}):"object"==typeof exports?module.exports=b:a.Carousel=b(a)}(this,function(){"use strict";var a=function(b){return this&&this instanceof a?("string"==typeof b&&(b={key:b}),this.target=b.target,void this.early()):new a(b)};return a.init=function(b){return new a(b)},a.prototype={early:function(){this.target.append('<span class="nav-left"></span><span class="nav-right"></span>'),this.setupClass(),this.events()},isInViewport:function(a){"function"==typeof jQuery&&a instanceof jQuery&&(a=a[0]);var b=a.getBoundingClientRect();return b.top>=0&&b.left>=0&&b.bottom<=(window.innerHeight||document.documentElement.clientHeight)&&b.right<=(window.innerWidth||document.documentElement.clientWidth)},setupClass:function(){var a=this.target.find(".carousel-box");a.eq(0).addClass("left"),a.eq(1).addClass("is-active"),a.eq(2).addClass("right")},moveCarousel:function(a,b,c,d){var e,f=this.target.find(".is-active");a.removeClass(b),f.removeClass("is-active").addClass(b),e=f.siblings("."+c).removeClass(c).addClass("is-active").index(),e=d(e,a),a.eq(e).addClass(c)},events:function(){var a=this;this.target.on("click",".nav-left, .left",function(b){b.preventDefault(),a.moveCarousel(a.target.find(".carousel-wrapper li"),"right","left",function(a){return 1===a?"0":a-1})}),this.target.on("click",".nav-right, .right",function(b){b.preventDefault(),a.moveCarousel(a.target.find(".carousel-wrapper li"),"left","right",function(a,b){return a===b.length-1?"0":a+1})}),$(document).keyup(function(b){39===b.which&&a.isInViewport(a.target)&&a.target.find(".nav-right").trigger("click"),37===b.which&&a.isInViewport(a.target)&&a.target.find(".nav-left").trigger("click")})}},a});
+    
+/* sdfgsdfgsdfg  */
+
 var map;
 function googleMap(mapWrap) {
     function initialize() {
@@ -218,9 +225,11 @@ if ($('.main').find('.artist-list').length == 1) {
 
         $('.arrow-prew').click(function () {
             $('.slick-prev').click();
+            $('.slider-bembi ul>li').removeClass('nextELe');
         });
 
         $('.arrow-next').click(function () {
+            $('.slider-bembi ul>li').removeClass('prevELe');
             $('.slick-next').click();
         });
     /* slider clients */
@@ -271,19 +280,66 @@ if ($('.main').find('.artist-list').length == 1) {
    /* booking top */
         
         if ($('.main').find('.slider-bembi').length == 1) {
-            $('.slider-bembi').slick({
-                //slidesToShow: 1,
+            $('.slider-bembi>ul').on('init', function(event, slick){
+
+                $('.arrow-next').click();
+            });
+
+            $('.slider-bembi>ul').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            
+                    var cur = $('.slider-bembi').find('.slick-current').index();
+            
+                    $('.slider-bembi').find('li').removeClass('prevELe').removeClass('nextELe') ; //.eq(cur).addClass('prevELe');
+                  /*  $('.slider-bembi').find('.slick-slide').eq( cur - 1 ).addClass('prevELe');
+
+                    $('.slider-bembi').find('.slick-slide').eq( cur + 1 ).addClass('nextELe');
+                */
+            });
+
+            $('.slider-bembi>ul').on('afterChange', function(event, slick){
+               setTimeout(function(){                        
+                    var cur = $('.slider-bembi').find('.slick-current').index();
+            
+                    //$('.slider-bembi').find('li').removeClass('prevELe').removeClass('nextELe') ; //.eq(cur).addClass('prevELe');
+                    $('.slider-bembi').find('.slick-slide').eq( cur - 1 ).addClass('prevELe');
+
+                    $('.slider-bembi').find('.slick-slide').eq( cur + 1 ).addClass('nextELe');
+                    
+                }, 0);
+
+            });
+           
+           
+           
+           $('.slider-bembi>ul').slick({
+                slidesToShow: 3,
+                dots: true,
                 //fade: true,
                 centerMode: true,
+                //arrows: false,
                 variableWidth: true,
                 slidesToScroll: 1,
                 adaptiveHeight: true,
                // autoplay: true,
                 infinite: true,
                // autoplaySpeed: 10000,
-                dots: true
+                responsive: [
+                    {
+                        breakpoint: 992,
+                            settings: {
+                                slidesToShow: 1
+                            }
+                    }]
+                
             });
+
         }
+        
+        
+        
+
+        
+        
    /* booking top */
    
    
@@ -311,6 +367,21 @@ if ($('.main').find('.artist-list').length == 1) {
             });
         }
    /* closed projects */
+
+   /* popup */ 
+
+   $('.contact-form input, .contact-form textarea').focus(function(){
+       $(this).closest('.form_input').addClass('focused').find('.placeholder').addClass('activate');
+   });
+
+   $('.contact-form input, .contact-form textarea').blur(function(){
+       if( ($(this).val() == '')){
+            $(this).closest('.form_input').removeClass('focused').find('.placeholder').removeClass('activate');
+       }
+
+   });
+
+   /* popup */
     
 
 });
