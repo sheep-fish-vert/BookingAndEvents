@@ -10,34 +10,49 @@
     </div>
 
     <div id="call-popup">
-        <form action="ajax.php" name="" class="contact-form">
-            <div class="contact-form-title">
-                <h5>Связаться с нами</h5>
-            </div>
-            <div class="contact-form-row cfix">
-                <div class="contact-form-item">
-                    <div class="contact-form-item-input form_row">
-                        <div class="form_input">
-                            <input type="text" name="contact_name" required="required" value="" placeholder="Имя">
+        <div class="convert">
+            <div class="left-p"></div>
+            <div class="right-p">
+                <form action="ajax.php" name="" class="contact-form">
+                    <div class="contact-form-title">
+                        <h5>Связаться с нами</h5>
+                    </div>
+                    <div class="contact-form-row cfix">
+                        <div class="contact-form-item">
+                            <div class="contact-form-item-input form_row">
+                                <div class="form_input">
+                                    <div class="placeholder">Имя</div>
+                                    <input type="text" name="contact_name" required="required" value="" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form-item">
+                            <div class="contact-form-item-input form_row">
+                                <div class="form_input">
+                                    <div class="placeholder">Телефон</div>
+                                    <input type="text" name="contact_tel" value="" required="required" class="tel-mask">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form-item">
+                            <div class="contact-form-item-input form_row">
+                                <div class="form_input">
+                                    <div class="placeholder">Сообщение</div>
+                                    <textarea name="massage" required="required" ></textarea>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="contact-form-item">
-                    <div class="contact-form-item-input form_row">
-                        <div class="form_input">
-                            <input type="text" name="contact_tel" value="" required="required" placeholder="Номер" class="tel-mask">
+                    <div class="contact-form-row-submit cfix">
+                        <div class="contact-form-item">
+                            <button type="submit" class="contact-submit">
+                                <span>Отправить</span>
+                            </button>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
-            <div class="contact-form-row cfix">
-                <div class="contact-form-item">
-                    <button type="submit" class="contact-submit">
-                        <span>Отправить</span>
-                    </button>
-                </div>
-            </div>
-        </form>
+        </div>
     </div>
 
 </div>
