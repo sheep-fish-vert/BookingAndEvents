@@ -1,5 +1,5 @@
 @media screen and (max-width: 1920px){
-	header{ 
+	header{
 		.wrapper{
 			.mbox{
 				img{
@@ -10,8 +10,8 @@
 						}
 					}
 				}
-				.language-button{ 
-					a{ 
+				.language-button{
+					a{
 						&:hover{
 						}
 					}
@@ -35,14 +35,19 @@
 	.about-us{
 		.mbox{
 			.upper-text{column-count: 2;
-				
+
 			}
 		}
 	}
 	.experience .experience-tabs .tab-content { padding-bottom: 200px;}
+
+	header.header-events{background:transparent;
+		&:after{width: 461px;height: 203px;background-size: contain;}
+		&:before{width: 497px;height: 119px;background-size: contain;background-position: right top;}
+	}
 }
 @media screen and (max-width: 992px){
-	header{ 
+	header{
 		.wrapper{
 			.mbox{
 				img{
@@ -53,8 +58,8 @@
 						}
 					}
 				}
-				.language-button{ 
-					a{ 
+				.language-button{
+					a{
 						&:hover{
 						}
 					}
@@ -67,7 +72,7 @@
 	.about-us{
 		.mbox{
 			h2{
-				
+
 			}
 			.soc-block{
 				.inst{
@@ -78,14 +83,14 @@
 				}
 			}
 			.about-us-text{padding-bottom: 500px;column-count: 1;
-				p{ 
-					
+				p{
+
 				}
 			}
 		}
 	}
 
-	header{ 
+	header{
 		.wrapper{
 			.mbox{
 				img{
@@ -96,8 +101,8 @@
 						}
 					}
 				}
-				.language-button{ 
-					a{ 
+				.language-button{
+					a{
 						&:hover{
 						}
 					}
@@ -106,28 +111,28 @@
 		}
 	}
 
-	.experience{ 
+	.experience{
 		.experience-tabs {
 			.tabs-nav{
-				.exp-tab{ text-align: center; 
+				.exp-tab{ text-align: center;
 					p{
-						
+
 					}
 				}
 			}
-		 	.tab-content{ 
+		 	.tab-content{
 				.partners-table{
 					div{width: calc(100% / 3);
 					}
 				}
-			}	
+			}
 		}
-	}	
+	}
 	.booking_partners{
-		.partners-heading-wrapper{ 
+		.partners-heading-wrapper{
 			.booking-partners-heading{ font-size: 38px; width: 340px;
 
-			}	
+			}
 		}
 		.partners-table{
 			div{width: calc(100% / 3);
@@ -139,7 +144,7 @@
 	.about-us{
 		.mbox{
 			h2{
-				
+
 			}
 			.soc-block{
 				.inst{
@@ -150,29 +155,29 @@
 				}
 			}
 			.about-us-text{padding-bottom: 600px;
-				p{ 
-					
+				p{
+
 				}
 			}
 		}
 	}
-	
-	header{ 
+
+	header{
 		.wrapper{
 			.mbox{
 				img{
 				}
-				nav{ width: 700px; max-height: 100%; padding: 0px 0px 0px 20px; flex-wrap: wrap; justify-content: center; 
+				nav{ width: 700px; max-height: 100%; padding: 0px 0px 0px 20px; flex-wrap: wrap; justify-content: center;
 					a{padding: 0 10px;line-height: 100%;
 						&:hover{
 						}
 						&:last-child{
-							
+
 						}
 					}
 				}
-				.language-button{ 
-					a{ 
+				.language-button{
+					a{
 						&:hover{
 						}
 					}
@@ -182,36 +187,36 @@
 	}
 
 	.booking_partners{
-		.partners-heading-wrapper{ 
+		.partners-heading-wrapper{
 			.booking-partners-heading{ font-size: 38px; width: 340px;
 
-			}	
+			}
 		}
-		
+
 	}
-	.experience{ 
-		.experience-tabs { 
+	.experience{
+		.experience-tabs {
 			.tabs-nav{
-				.exp-tab{ padding: 10px 25px; text-align: center;  font-size: 14px; 
+				.exp-tab{ padding: 10px 25px; text-align: center;  font-size: 14px;
 					p{
-						
+
 					}
 				}
 			}
-		 	.tab-content{ 
+		 	.tab-content{
 				.partners-table{
 					div{width: calc(100% / 2);
 					}
 				}
-			}	
+			}
 		}
-	}	
+	}
 }
 @media screen and (max-width: 479px){
 	.about-us{
 		.mbox{
 			h2{
-				
+
 			}
 			.soc-block{
 				.inst{
@@ -222,24 +227,24 @@
 				}
 			}
 			.about-us-text{padding-bottom: 800px;
-				p{ 
-					
+				p{
+
 				}
 			}
 		}
 	}
 
 	.booking_partners{
-		.partners-heading-wrapper{ 
+		.partners-heading-wrapper{
 			.booking-partners-heading{ font-size: 30px; width: 270px;
 
-			}	
+			}
 		}
 		.partners-table{
 			tr{
 				td{
 					img{
-						
+
 					}
 				}
 			}

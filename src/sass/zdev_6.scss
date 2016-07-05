@@ -1,8 +1,8 @@
 //about-us
-.about-us{background: url('../../images/about-us-background.jpg') no-repeat; background-size: cover; background-position: 50% 50%;	
+.about-us{background: url('../../images/about-us-background.jpg') no-repeat; background-size: cover; background-position: 50% 50%;
 	.mbox{
 		h2{
-			
+
 		}
 		.soc-block{
 			.inst{
@@ -14,29 +14,45 @@
 		}
 		.about-us-text{padding:23px 0px 400px 0px;
 			p{ text-align: left;
-				
+
 			}
 		}
 	}
 }
 //header
 header{ max-height: 155px; background: #2d2d2d;
-	.wrapper{width: 100%; background-image: url(../images/head-bg.jpg); background-size: cover; 
+	.wrapper{width: 100%; background-image: url(../images/head-bg.jpg); background-size: cover;
 		.mbox{display: flex; justify-content: space-between; padding-bottom: 40px; padding-top: 30px;
-			
-			a{display: block;	 
+
+			a{display: block;
 				img{max-width: none;
 				}
 			}
 			nav{display: flex; justify-content: space-between; width: 800px; padding: 0px 140px 0px 180px; align-items: center;
 				a{display:block; font-size: 14px; color: #fff; text-decoration: none; vertical-align: middle; transition: all 0.3s;
-					
+
 				}
 			}
 			.language-button{ order: 1; align-self: center;
 				a{ text-transform: uppercase; text-decoration: none; color: #fff; padding: 0px 20px;
 					&:hover{color: #659bca;
 					}
+				}
+			}
+		}
+	}
+	&.header-events{background:transparent;
+		&:after{content: '';background:transparent url('../images/header-events-left.png') left top no-repeat;left: 0;top: 0;position: absolute;width: 657px;height: 332px;}
+		&:before{content: '';background:transparent url('../images/header-events-right.png') left top no-repeat;right: 0;top: 0;width: 623px;height: 250px;position: absolute;}
+		.wrapper{background-image: none;
+			.mbox{
+				.language-button{
+					a{color: #3d3d3d;
+						&:hover{color: #e25585;}
+					}
+				}
+				nav{
+					a{color: #3d3d3d;font-size: 16px;}
 				}
 			}
 		}
@@ -57,15 +73,15 @@ header{ max-height: 155px; background: #2d2d2d;
 	.partners-heading-wrapper{ padding: 0px 0px 40px 0px;text-align: center;
 		.booking-partners-heading{ margin: 0 auto; text-transform: uppercase; padding: 10px 0;font-size: 48px; border-top: 5px solid #444444; border-bottom: 5px solid #444444; color: #444444; display: inline-block;
 
-		}	
+		}
 	}
-	.partners-table{width: calc(100% + 2px); display: flex; flex-wrap: wrap; 
-		div{border: 1px solid #e3e3e3; width: calc(100% / 6); height: 150px; text-align: center;  padding-left: 10px;padding-right: 10px;line-height: 100px; 
+	.partners-table{width: calc(100% + 2px); display: flex; flex-wrap: wrap;
+		div{border: 1px solid #e3e3e3; width: calc(100% / 6); height: 150px; text-align: center;  padding-left: 10px;padding-right: 10px;line-height: 100px;
 			img{
-				
+
 			}
-		}	
-	}	
+		}
+	}
 }
 
 //events experience tabs
@@ -84,11 +100,11 @@ header{ max-height: 155px; background: #2d2d2d;
 		.tab-content{ width: 100%;display: none; float:left; clear: both; background: url('../../images/exp-tab-content-background.jpg') no-repeat; background-size: cover;     background-position: top; background-position: 50% 50%; padding: 0px 0px 600px 0px;
 			&:nth-child(2){display: block;}
 			.partners-table{width: 100%; display: flex; flex-wrap: wrap;
-				div{border: 1px solid #e3e3e3 !important; width: calc(100% / 6); height: 150px; text-align: center; border-top: none; padding-left: 10px;padding-right: 10px;line-height: 100px; 
+				div{border: 1px solid #e3e3e3 !important; width: calc(100% / 6); height: 150px; text-align: center; border-top: none; padding-left: 10px;padding-right: 10px;line-height: 100px;
 					img{
-						
+
 					}
-				}	
+				}
 			}
 		}
 		.active-tab{ background: #fff; color: #797979!important;
