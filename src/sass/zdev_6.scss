@@ -40,7 +40,7 @@ header{ max-height: 155px; background: #2d2d2d;
 			}
 		}
 	}
-	&.header-events{background:transparent;
+	&.header-events{background:transparent; 
 		&:after{content: '';background:transparent url('../images/header-events-left.png') left top no-repeat;left: 0;top: 0;position: absolute;width: 657px;height: 332px;}
 		&:before{content: '';background:transparent url('../images/header-events-right.png') left top no-repeat;right: 0;top: 0;width: 623px;height: 250px;position: absolute;}
 		.wrapper{background-image: none;
