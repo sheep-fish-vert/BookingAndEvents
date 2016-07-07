@@ -10,6 +10,39 @@ function tabChangig(){
 	})
 }
 
+function navigationMove(){
+	var position = $(window).scrollTop();
+	var height = $('.header-events').height();
+
+	$(window).scroll(function(){
+		setWindowPosition();
+		console.log(position);
+		console.log(height);
+		if(position > height){
+			$('header .wrapper').css({
+				// 'background':'url("../images/events-header-bg-2.png") no-repeat',
+				// 'background-size':'cover',
+				// 'background-position':'50%',
+				// 'z-index':'9999'
+				'opacity':'0.9'
+			});
+		}else{ 
+			$('header .wrapper').css({
+			// 'background':'url("../images/events-header-bg.jpg") no-repeat',
+			// 'background-size':'cover',
+			// 'background-position':'50%',
+			// 'z-index':'9999'	
+			'opacity':'1'
+			}); 
+		}
+	})
+
+	function setWindowPosition(){
+		position = $(window).scrollTop();
+		
+	}
+}
+
 $(document).ready(function(){
 	
 	
@@ -35,6 +68,7 @@ $(document).ready(function(){
 	});
 
 	tabChangig();
+	navigationMove()
 
 });
 
